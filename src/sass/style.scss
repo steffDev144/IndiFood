@@ -1,0 +1,59 @@
+@import './vars/variables';
+
+@font-face {
+font-family: "Gilroy";
+src:
+        url("../fonts/Gilroy-Black.ttf") format("ttf"),
+        url("../fonts/Gilroy-Black.eot") format("eot"),
+        url("../fonts/Gilroy-Black.woff") format("woff");
+font-weight: 900;
+}
+@font-face {
+font-family: "Gilroy";
+src:
+        url("../fonts/Gilroy-Bold.ttf") format("ttf"),
+        url("../fonts/Gilroy-Bold.eot") format("eot"),
+        url("../fonts/Gilroy-Bold.woff") format("woff");
+font-weight: 700;
+}
+@font-face {
+font-family: "Gilroy";
+src:
+        url("../fonts/Gilroy-Medium.ttf") format("ttf"),
+        url("../fonts/Gilroy-Medium.eot") format("eot"),
+        url("../fonts/Gilroy-Medium.woff") format("woff");
+font-weight: 500;
+}
+@font-face {
+font-family: "Gilroy";
+src:
+        url("../fonts/Gilroy-Regular.ttf") format("ttf"),
+        url("../fonts/Gilroy-Regular.eot") format("eot"),
+        url("../fonts/Gilroy-Regular.woff") format("woff");
+font-weight: 400;
+}
+@font-face {
+font-family: 'Appetite';
+src: url('../../fonts/appetite.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.container {
+    max-width: 1160px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@import './blocks/main';
+@import './blocks/submain';

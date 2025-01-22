@@ -100,7 +100,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('watch1', function () {
-  gulp.watch("src/css/**/*.+(scss|sass|css)", gulp.parallel('styles'));
+  gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));
   gulp.watch("src/*.html").on('change', gulp.parallel('html'));
   gulp.watch("src/*.html").on('change', gulp.parallel('styles'));
   gulp.watch("src/fonts/**/*").on('all', gulp.parallel('fonts'));

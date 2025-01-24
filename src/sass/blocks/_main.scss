@@ -1,5 +1,7 @@
+@use "../vars/variables";
+
 .main {
-    background-color: $main-color;
+    background-color: variables.$main-color;
     padding: 33px 78px;
     &__wrap {
         z-index: 1;
@@ -8,7 +10,7 @@
     }
     &__card {
         border-radius: 45px;
-        background-color: $second-color;
+        background-color: variables.$second-color;
         background-image: url('../img/main_card_bg.png');
         background-position: bottom center;
         background-repeat: no-repeat;
@@ -31,7 +33,7 @@
             line-height: 100%;
             letter-spacing: 0.04em;
             text-align: center;
-            color: $main-color;
+            color: variables.$main-color;
             font-family: 'Appetite', sans-serif;
             margin-top: 62px;
             text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -45,7 +47,7 @@
             line-height: 95%;
             margin-top: 15px;
             letter-spacing: 0.01em;
-            color: $main-color;
+            color: variables.$main-color;
             text-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
         }
         p {
@@ -53,7 +55,7 @@
             font-size: 30px;
             line-height: 106%;
             letter-spacing: 0.01em;
-            color: $main-color;
+            color: variables.$main-color;
             margin-top: 61px;
         }
         &_btns {
@@ -70,7 +72,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: $main-color;
+                color: variables.$main-color;
                 border: 1px solid #000;
                 border-radius: 25px;
                 height: 57px;
@@ -78,12 +80,12 @@
                 cursor: pointer;
                 transition: all .3s ease-in-out;
                 &:hover {
-                    background-color: $main-color;
-                    color: $second-color;
+                    background-color: variables.$main-color;
+                    color: variables.$second-color;
                 }
                 &.link {
-                    background-color: $main-color;
-                    color: $second-color;
+                    background-color: variables.$main-color;
+                    color: variables.$second-color;
                     border-color: transparent;
                     position: relative;
                     top: 0;

@@ -1,4 +1,5 @@
-@import './vars/variables';
+@use "sass:meta";
+@use 'vars/variables';
 
 @font-face {
 font-family: "Gilroy";
@@ -55,5 +56,9 @@ font-display: swap;
     margin: 0 auto;
 }
 
-@import './blocks/main';
-@import './blocks/submain';
+@include meta.load-css('blocks/main');
+@include meta.load-css('blocks/submain');
+@include meta.load-css('blocks/shop');
+
+@include meta.load-css('media/main');
+@include meta.load-css('media/submain');

@@ -1,0 +1,94 @@
+@use '../vars/variables';
+
+.shop {
+    padding: 150px 0 110px;
+    background: url('../img/shop_bg.png') bottom center/contain no-repeat;
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+        column-gap: 40px;
+        row-gap: 55px;
+        list-style-type: none;
+        margin-top: 50px;
+        &_item {
+            &-img {
+                width: 100%;
+                height: auto;
+                img {
+                    width: inherit;
+                    height: inherit;
+                    object-fit: contain;
+                    border-radius: 25px 25px 0 0;
+                }
+            }
+            &-wrap {
+                box-shadow: 0 19px 25px 0 rgba(0, 0, 0, 0.08);
+                background: #fff;
+                border-radius: 25px;
+                padding: 25px;
+                margin-top: -45px;
+                z-index: 2;
+                position: relative;
+            }
+            &-round {
+                border-radius: 100%;
+                background-color: #f76615;
+                display: block;
+                width: 25px;
+                height: 25px;
+            }
+            &-title {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 95%;
+                letter-spacing: 0.01em;
+                margin-top: 16px;
+                color: variables.$main-color;
+            }
+            &-subtitle {
+                margin: 7px 0 13px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 95%;
+                letter-spacing: 0.01em;
+                color: #8c8d8f;
+            }
+            &-price {
+                margin-top: 10px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 95%;
+                letter-spacing: 0.01em;
+                color: variables.$main-color;
+                span {
+                    margin-left: 15px;
+                    color: #f76615;
+                }
+            }
+        }
+    }
+    &__more {
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 20px;
+        text-align: center;
+        color: variables.$second-color;
+
+        border-radius: 25px;
+        width: 272px;
+        cursor: pointer;
+        height: 57px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 45px auto 0;
+        background-color: variables.$main-color;
+        border: 1px solid variables.$main-color;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            color: variables.$main-color;
+            background-color: transparent;
+        }
+    }
+}

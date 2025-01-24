@@ -1,0 +1,102 @@
+@media (max-width:1441px) {
+    .main {
+        padding: 33px 0;
+        &__wrap {
+            max-width: 1160px;
+            width: 100%;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+        &__card {
+            max-width: 600px;
+            padding-bottom: 150px;
+            &_logo {
+                width: 250px;
+                height: auto;
+            }
+            h1 {
+                font-size: 35px;
+                margin-top: 30px;
+            }
+            h2 {
+                font-size: 29px;
+            }
+            p {
+                font-size: 24px;
+            }
+        }
+        &__img {
+            width: 80%;
+        }
+    }
+}
+@media (max-width:991px) {
+    .main {
+        &__wrap {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__img {
+            position: static;
+            margin-bottom: -90px;
+            max-width: 600px;
+            width: 100%;
+            img {
+                border-radius: 45px;
+            }
+        }
+    }
+}
+@media (max-width:767px) {
+    .main {
+        &__card {
+            padding: 30px 30px 100px;
+            border-radius: 20px;
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 21px;
+            }
+            p {
+                font-size: 19px;
+            }
+            &_btns {
+                margin-top: 60px;
+                grid-template-columns: 1fr;
+            }
+        }
+        &__img {
+            margin-bottom: -60px;
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width:480px) {
+    .main {
+        &__card {
+            padding: 30px 15px;
+            &_logo {
+                width: 150px;
+            }
+            h1 {
+                font-size: 19px;
+            }
+            h2 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 16px;
+                margin-top: 30px;
+            }
+            &_btns a{
+                font-size: 18px;
+                height: 50px;
+            }
+        }
+    }
+}

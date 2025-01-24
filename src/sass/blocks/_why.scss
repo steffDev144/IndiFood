@@ -1,0 +1,35 @@
+@use '../vars/variables';
+
+.why {
+    background: linear-gradient(180deg, #ededed 0%, #fbfbfb 100%);
+    padding: 150px 0;
+    &__list {
+        margin-top: 100px;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        column-gap: 124px;
+        row-gap: 60px;
+
+        &_item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            &-img {
+                width: 72px;
+                height: 72px;
+                img {
+                    width: inherit;
+                    height: inherit;
+                    object-fit: cover;
+                }
+            }  
+            p {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 100%;
+                color: #000;
+            } 
+        }
+    }
+}

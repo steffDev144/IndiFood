@@ -1,0 +1,48 @@
+@use '../vars/variables';
+
+.start {
+    padding: 171px 0 285px;
+    background: url('../img/start_bg.png') left center/contain no-repeat;
+
+    &__list {
+        margin-top: 116px;
+        list-style-type: none;
+        &_item {
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            gap: 36px;
+            font-size: 32px;
+            line-height: 95%;
+            letter-spacing: 0.01em;
+            color: variables.$main-color;
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                background-color: #01b620;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                width: 4px;
+                height: 65px;
+                background: #01b620;
+                left: 18px;
+                top: 30px;
+            }
+            &:last-child {
+                &::before {
+                    background-color: #f76615;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

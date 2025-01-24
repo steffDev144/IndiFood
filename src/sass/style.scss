@@ -1,64 +1,102 @@
 @use "sass:meta";
-@use 'vars/variables';
+@use "vars/variables";
 
 @font-face {
-font-family: "Gilroy";
-src:
-        url("../fonts/Gilroy-Black.ttf") format("ttf"),
-        url("../fonts/Gilroy-Black.eot") format("eot"),
-        url("../fonts/Gilroy-Black.woff") format("woff");
-font-weight: 900;
-}
-@font-face {
-font-family: "Gilroy";
-src:
-        url("../fonts/Gilroy-Bold.ttf") format("ttf"),
-        url("../fonts/Gilroy-Bold.eot") format("eot"),
-        url("../fonts/Gilroy-Bold.woff") format("woff");
-font-weight: 700;
-}
-@font-face {
-font-family: "Gilroy";
-src:
-        url("../fonts/Gilroy-Medium.ttf") format("ttf"),
-        url("../fonts/Gilroy-Medium.eot") format("eot"),
-        url("../fonts/Gilroy-Medium.woff") format("woff");
-font-weight: 500;
-}
-@font-face {
-font-family: "Gilroy";
-src:
-        url("../fonts/Gilroy-Regular.ttf") format("ttf"),
-        url("../fonts/Gilroy-Regular.eot") format("eot"),
-        url("../fonts/Gilroy-Regular.woff") format("woff");
-font-weight: 400;
-}
-@font-face {
-font-family: 'Appetite';
-src: url('../../fonts/appetite.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-font-display: swap;
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Black.ttf") format("ttf"),
+		url("../fonts/Gilroy-Black.eot") format("eot"),
+		url("../fonts/Gilroy-Black.woff") format("woff");
+	font-weight: 900;
 }
 
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.ttf") format("ttf"),
+		url("../fonts/Gilroy-Bold.eot") format("eot"),
+		url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.ttf") format("ttf"),
+		url("../fonts/Gilroy-Medium.eot") format("eot"),
+		url("../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Regular.ttf") format("ttf"),
+		url("../fonts/Gilroy-Regular.eot") format("eot"),
+		url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Appetite";
+	src: url("../../fonts/appetite.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gilroy', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Gilroy", sans-serif;
 }
 
 .container {
-    max-width: 1160px;
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
+	max-width: 1180px;
+	width: 100%;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 
-@include meta.load-css('blocks/main');
-@include meta.load-css('blocks/submain');
-@include meta.load-css('blocks/shop');
+h3.title {
+	font-weight: 900;
+	font-size: 65px;
+	line-height: 95%;
+	letter-spacing: 0.01em;
+	color: variables.$main-color;
+	text-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
 
-@include meta.load-css('media/main');
-@include meta.load-css('media/submain');
+h3.title.white {
+	color: variables.$second-color;
+	font-size: 61px;
+}
+
+h3.title.mark {
+	position: relative;
+	z-index: 2;
+	width: max-content;
+	padding: 15px 40px;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		z-index: -1;
+		left: 50%;
+		width: 100%;
+		height: 100%;
+		background: #f76615;
+		transform: translate(-50%, -50%);
+	}
+	&:last-of-type {
+		padding-top: 0;
+	}
+}
+
+@include meta.load-css("blocks/main");
+@include meta.load-css("blocks/submain");
+@include meta.load-css("blocks/shop");
+@include meta.load-css("blocks/numbers");
+@include meta.load-css("blocks/who");
+@include meta.load-css("blocks/start");
+@include meta.load-css("blocks/why");
+
+@include meta.load-css("media/main");
+@include meta.load-css("media/submain");

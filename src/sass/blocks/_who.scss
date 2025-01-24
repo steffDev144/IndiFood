@@ -1,0 +1,70 @@
+@use '../vars/variables';
+
+.who {
+    background: linear-gradient(180deg, #2f3035 0%, #626262 100%);
+    padding: 22px 0 157px;
+    &__list {
+        list-style-type: none;
+        margin-top: 44px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(300px, auto));
+        column-gap: 40px;
+        row-gap: 29px;
+        &_item {
+            display: flex;
+            justify-content: start;
+            padding: 108px 0 30px;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            background: #f76615;
+            border-radius: 30px;
+            &-title {
+                font-weight: 900;
+                font-size: 61px;
+                line-height: 95%;
+                letter-spacing: 0.01em;
+                color: variables.$second-color;
+                text-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+            }
+            &-subtitle {
+                font-weight: 500;
+                font-size: 29px;
+                margin-top: 22px;
+                text-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+                line-height: 95%;
+                letter-spacing: 0.01em;
+                color: #fff;
+            }
+            &-wrap {
+                max-width: 299px;
+            }
+            &:last-of-type {
+                grid-column: 2 / 4;
+                display: grid;
+                justify-content: space-between;
+                align-items: end;
+                grid-template-columns: 1fr 179px;
+                gap: 20px;
+                padding: 60px 90px 60px 47px;
+                background: variables.$main-color;
+            }
+            &-big {
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            &-img {
+                width: 179px;
+                height: 179px;
+                svg {
+                    width: inherit;
+                    height: inherit;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

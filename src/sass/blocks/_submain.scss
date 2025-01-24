@@ -1,13 +1,6 @@
 @use "../vars/variables";
 
-h3.title {
-    font-weight: 900;
-    font-size: 65px;
-    line-height: 95%;
-    letter-spacing: 0.01em;
-    color: variables.$main-color;
-    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
-}
+
 .submain {
     padding: 150px 0 192px;
     background: url('../img/submain_bg.jpg') center center/cover no-repeat;

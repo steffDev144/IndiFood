@@ -1,276 +1,553 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IndiFood</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.min.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="main">
-        <div class="main__wrap">
-            <div class="main__card">
-                <div class="main__card_logo"><img src="./img/logo.png" alt="" /></div>
-                <h1>ФРАНШИЗА <span>«</span>ИНДИФУД<span>»</span></h1>
-                <h2>Ваш надёжный бизнес по продаже востребованных продуктов</h2>
-                <p>
-                    Станьте владельцем прибыльного магазина, получите доступ к полной
-                    поддержке и сервисам франчайзинга «ИндиФуд»
-                </p>
-                <div class="main__card_btns">
-                    <a>Скачать презентацию</a>
-                    <a class="link">Стать партнёром</a>
-                </div>
-            </div>
-            <div class="main__img"><img src="./img/main_bg.jpg" alt="" /></div>
+      <div class="main__wrap">
+        <div class="main__card">
+          <div class="main__card_logo"><img src="./img/logo.png" alt="" /></div>
+          <h1>ФРАНШИЗА <span>«</span>ИНДИФУД<span>»</span></h1>
+          <h2>Ваш надёжный бизнес по продаже востребованных продуктов</h2>
+          <p>
+            Станьте владельцем прибыльного магазина, получите доступ к полной
+            поддержке и сервисам франчайзинга «ИндиФуд»
+          </p>
+          <div class="main__card_btns">
+            <a>Скачать презентацию</a>
+            <a class="link">Стать партнёром</a>
+          </div>
         </div>
+        <div class="main__img"><img src="./img/main_bg.jpg" alt="" /></div>
+      </div>
     </section>
     <section class="submain">
-        <div class="container">
-            <h3 class="title">
-                Главное о франшизе <span style="color: #f76615">Инди</span><span style="color: #01b620">Фуд</span>
-            </h3>
-            <ul class="submain__list">
-                <li class="submain__list_item">
-                    <div class="submain__list_item-round">1</div>
-                    <div class="submain__list_item-wrap">
-                        <div class="submain__list_item-title">
-                            «Индифуд» - сеть магазинов мяса индейки.
-                        </div>
-                        <p>
-                            Флагманский продукт - изделия из мяса индейки. Такой формат
-                            позволяет выстраивать постоянные отношения с покупателем и
-                            гарантирует стабильные Финансовые результаты
-                        </p>
-                    </div>
-                </li>
-                <li class="submain__list_item">
-                    <div class="submain__list_item-round">2</div>
-                    <div class="submain__list_item-wrap">
-                        <div class="submain__list_item-title">
-                            Делаем качественный <mark>продукт доступным.</mark>
-                        </div>
-                        <p>
-                            Мы одна из крупнейших оптово-розничных компаний по продаже
-                            индейки на территории России. Это позволяет нам держать лучшие
-                            цены при стабильно высоком качестве продукта
-                        </p>
-                    </div>
-                </li>
-                <li class="submain__list_item">
-                    <div class="submain__list_item-round">3</div>
-                    <div class="submain__list_item-wrap">
-                        <div class="submain__list_item-title">
-                            Наш продукт <mark>востребован в любое время.</mark>
-                        </div>
-                        <p>
-                            Еда - базовая потребность любого человека, поэтому какой бы ни
-                            была социально-экономическая ситуация в мире, люди в первую
-                            очередь будут покупать продукты
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <h3 class="title">
+          Главное о франшизе <span style="color: #f76615">Инди</span
+          ><span style="color: #01b620">Фуд</span>
+        </h3>
+        <ul class="submain__list">
+          <li class="submain__list_item">
+            <div class="submain__list_item-round">1</div>
+            <div class="submain__list_item-wrap">
+              <div class="submain__list_item-title">
+                «Индифуд» - сеть магазинов мяса индейки.
+              </div>
+              <p>
+                Флагманский продукт - изделия из мяса индейки. Такой формат
+                позволяет выстраивать постоянные отношения с покупателем и
+                гарантирует стабильные Финансовые результаты
+              </p>
+            </div>
+          </li>
+          <li class="submain__list_item">
+            <div class="submain__list_item-round">2</div>
+            <div class="submain__list_item-wrap">
+              <div class="submain__list_item-title">
+                Делаем качественный <mark>продукт доступным.</mark>
+              </div>
+              <p>
+                Мы одна из крупнейших оптово-розничных компаний по продаже
+                индейки на территории России. Это позволяет нам держать лучшие
+                цены при стабильно высоком качестве продукта
+              </p>
+            </div>
+          </li>
+          <li class="submain__list_item">
+            <div class="submain__list_item-round">3</div>
+            <div class="submain__list_item-wrap">
+              <div class="submain__list_item-title">
+                Наш продукт <mark>востребован в любое время.</mark>
+              </div>
+              <p>
+                Еда - базовая потребность любого человека, поэтому какой бы ни
+                была социально-экономическая ситуация в мире, люди в первую
+                очередь будут покупать продукты
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="shop">
-        <div class="container">
-            <h3 class="title">Действующие магазины</h3>
-            <ul class="shop__list">
-                <li class="shop__list_item">
-                    <div class="shop__list_item-img"><img src="./img/shop/1.png" alt="1" /></div>
-                    <div class="shop__list_item-wrap">
-                        <span class="shop__list_item-round"></span>
-                        <div class="shop__list_item-title">Балашиха</div>
-                        <div class="shop__list_item-subtitle">Советская ул., 10</div>
-                        <div class="shop__list_item-price">Выручка в месяц: <span>963 417 р.</span></div>
-                        <div class="shop__list_item-price">Прибыль в месяц: <span>291 365 р.</span></div>
-                    </div>
-                </li>
-                <li class="shop__list_item">
-                    <div class="shop__list_item-img"><img src="./img/shop/2.png" alt="2" /></div>
-                    <div class="shop__list_item-wrap">
-                        <span class="shop__list_item-round"></span>
-                        <div class="shop__list_item-title">Ульяновск</div>
-                        <div class="shop__list_item-subtitle">Гагарина, 27</div>
-                        <div class="shop__list_item-price">Выручка в месяц: <span>823 745 р.</span></div>
-                        <div class="shop__list_item-price">Прибыль в месяц: <span>370 964 р.</span></div>
-                    </div>
-                </li>
-                <li class="shop__list_item">
-                    <div class="shop__list_item-img"><img src="./img/shop/3.png" alt="3" /></div>
-                    <div class="shop__list_item-wrap">
-                        <span class="shop__list_item-round"></span>
-                        <div class="shop__list_item-title">Екатеринбург</div>
-                        <div class="shop__list_item-subtitle">Викулова 33/1</div>
-                        <div class="shop__list_item-price">Выручка в месяц: <span>1 153 452 р.</span></div>
-                        <div class="shop__list_item-price">Прибыль в месяц: <span>342 671 р.</span></div>
-                    </div>
-                </li>
-                <li class="shop__list_item">
-                    <div class="shop__list_item-img"><img src="./img/shop/1.png" alt="1" /></div>
-                    <div class="shop__list_item-wrap">
-                        <span class="shop__list_item-round"></span>
-                        <div class="shop__list_item-title">Балашиха</div>
-                        <div class="shop__list_item-subtitle">Советская ул., 10</div>
-                        <div class="shop__list_item-price">Выручка в месяц: <span>963 417 р.</span></div>
-                        <div class="shop__list_item-price">Прибыль в месяц: <span>291 365 р.</span></div>
-                    </div>
-                </li>
-                <li class="shop__list_item">
-                    <div class="shop__list_item-img"><img src="./img/shop/2.png" alt="2" /></div>
-                    <div class="shop__list_item-wrap">
-                        <span class="shop__list_item-round"></span>
-                        <div class="shop__list_item-title">Ульяновск</div>
-                        <div class="shop__list_item-subtitle">Гагарина, 27</div>
-                        <div class="shop__list_item-price">Выручка в месяц: <span>823 745 р.</span></div>
-                        <div class="shop__list_item-price">Прибыль в месяц: <span>370 964 р.</span></div>
-                    </div>
-                </li>
-                <li class="shop__list_item">
-                    <div class="shop__list_item-img"><img src="./img/shop/3.png" alt="3" /></div>
-                    <div class="shop__list_item-wrap">
-                        <span class="shop__list_item-round"></span>
-                        <div class="shop__list_item-title">Екатеринбург</div>
-                        <div class="shop__list_item-subtitle">Викулова 33/1</div>
-                        <div class="shop__list_item-price">Выручка в месяц: <span>1 153 452 р.</span></div>
-                        <div class="shop__list_item-price">Прибыль в месяц: <span>342 671 р.</span></div>
-                    </div>
-                </li>
-            </ul>
-            <a class="shop__more">Показать больше</a>
-        </div>
+      <div class="container">
+        <h3 class="title">Действующие магазины</h3>
+        <ul class="shop__list">
+          <li class="shop__list_item">
+            <div class="shop__list_item-img">
+              <img src="./img/shop/1.png" alt="1" />
+            </div>
+            <div class="shop__list_item-wrap">
+              <span class="shop__list_item-round"></span>
+              <div class="shop__list_item-title">Балашиха</div>
+              <div class="shop__list_item-subtitle">Советская ул., 10</div>
+              <div class="shop__list_item-price">
+                Выручка в месяц: <span>963 417 р.</span>
+              </div>
+              <div class="shop__list_item-price">
+                Прибыль в месяц: <span>291 365 р.</span>
+              </div>
+            </div>
+          </li>
+          <li class="shop__list_item">
+            <div class="shop__list_item-img">
+              <img src="./img/shop/2.png" alt="2" />
+            </div>
+            <div class="shop__list_item-wrap">
+              <span class="shop__list_item-round"></span>
+              <div class="shop__list_item-title">Ульяновск</div>
+              <div class="shop__list_item-subtitle">Гагарина, 27</div>
+              <div class="shop__list_item-price">
+                Выручка в месяц: <span>823 745 р.</span>
+              </div>
+              <div class="shop__list_item-price">
+                Прибыль в месяц: <span>370 964 р.</span>
+              </div>
+            </div>
+          </li>
+          <li class="shop__list_item">
+            <div class="shop__list_item-img">
+              <img src="./img/shop/3.png" alt="3" />
+            </div>
+            <div class="shop__list_item-wrap">
+              <span class="shop__list_item-round"></span>
+              <div class="shop__list_item-title">Екатеринбург</div>
+              <div class="shop__list_item-subtitle">Викулова 33/1</div>
+              <div class="shop__list_item-price">
+                Выручка в месяц: <span>1 153 452 р.</span>
+              </div>
+              <div class="shop__list_item-price">
+                Прибыль в месяц: <span>342 671 р.</span>
+              </div>
+            </div>
+          </li>
+          <li class="shop__list_item">
+            <div class="shop__list_item-img">
+              <img src="./img/shop/1.png" alt="1" />
+            </div>
+            <div class="shop__list_item-wrap">
+              <span class="shop__list_item-round"></span>
+              <div class="shop__list_item-title">Балашиха</div>
+              <div class="shop__list_item-subtitle">Советская ул., 10</div>
+              <div class="shop__list_item-price">
+                Выручка в месяц: <span>963 417 р.</span>
+              </div>
+              <div class="shop__list_item-price">
+                Прибыль в месяц: <span>291 365 р.</span>
+              </div>
+            </div>
+          </li>
+          <li class="shop__list_item">
+            <div class="shop__list_item-img">
+              <img src="./img/shop/2.png" alt="2" />
+            </div>
+            <div class="shop__list_item-wrap">
+              <span class="shop__list_item-round"></span>
+              <div class="shop__list_item-title">Ульяновск</div>
+              <div class="shop__list_item-subtitle">Гагарина, 27</div>
+              <div class="shop__list_item-price">
+                Выручка в месяц: <span>823 745 р.</span>
+              </div>
+              <div class="shop__list_item-price">
+                Прибыль в месяц: <span>370 964 р.</span>
+              </div>
+            </div>
+          </li>
+          <li class="shop__list_item">
+            <div class="shop__list_item-img">
+              <img src="./img/shop/3.png" alt="3" />
+            </div>
+            <div class="shop__list_item-wrap">
+              <span class="shop__list_item-round"></span>
+              <div class="shop__list_item-title">Екатеринбург</div>
+              <div class="shop__list_item-subtitle">Викулова 33/1</div>
+              <div class="shop__list_item-price">
+                Выручка в месяц: <span>1 153 452 р.</span>
+              </div>
+              <div class="shop__list_item-price">
+                Прибыль в месяц: <span>342 671 р.</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a class="shop__more">Показать больше</a>
+      </div>
     </section>
 
     <section class="numbers">
-        <div class="container">
-            <h3 class="title white">Цифры</h3>
-            <ul class="numbers__list">
-                <li class="numbers__list_item">
-                    <div class="numbers__list_item-title">1 172 617руб / мес.</div>
-                    <div class="numbers__list_item-subtitle">средняя ежемесячная выручка</div>
-                </li>
-                <li class="numbers__list_item">
-                    <div class="numbers__list_item-title">18,1%</div>
-                    <div class="numbers__list_item-subtitle">рентабельность по чистой прибыли</div>
-                </li>
-                <li class="numbers__list_item">
-                    <div class="numbers__list_item-title">35 000руб / день</div>
-                    <div class="numbers__list_item-subtitle">плановая выручка в день</div>
-                </li>
-                <li class="numbers__list_item">
-                    <div class="numbers__list_item-title">5 месяцев</div>
-                    <div class="numbers__list_item-subtitle">выход на плановые показатели</div>
-                </li>
-                <li class="numbers__list_item active">
-                    <div class="numbers__list_item-title ">211 718руб /мес.</div>
-                    <div class="numbers__list_item-subtitle">средняя чистая прибыль в месяц</div>
-                </li>
-                <li class="numbers__list_item ">
-                    <div class="numbers__list_item-title">10 месяцев</div>
-                    <div class="numbers__list_item-subtitle">период окупаемости</div>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <h3 class="title white">Цифры</h3>
+        <ul class="numbers__list">
+          <li class="numbers__list_item">
+            <div class="numbers__list_item-title">1 172 617руб / мес.</div>
+            <div class="numbers__list_item-subtitle">
+              средняя ежемесячная выручка
+            </div>
+          </li>
+          <li class="numbers__list_item">
+            <div class="numbers__list_item-title">18,1%</div>
+            <div class="numbers__list_item-subtitle">
+              рентабельность по чистой прибыли
+            </div>
+          </li>
+          <li class="numbers__list_item">
+            <div class="numbers__list_item-title">35 000руб / день</div>
+            <div class="numbers__list_item-subtitle">
+              плановая выручка в день
+            </div>
+          </li>
+          <li class="numbers__list_item">
+            <div class="numbers__list_item-title">5 месяцев</div>
+            <div class="numbers__list_item-subtitle">
+              выход на плановые показатели
+            </div>
+          </li>
+          <li class="numbers__list_item active">
+            <div class="numbers__list_item-title">211 718руб /мес.</div>
+            <div class="numbers__list_item-subtitle">
+              средняя чистая прибыль в месяц
+            </div>
+          </li>
+          <li class="numbers__list_item">
+            <div class="numbers__list_item-title">10 месяцев</div>
+            <div class="numbers__list_item-subtitle">период окупаемости</div>
+          </li>
+        </ul>
+      </div>
     </section>
-    
 
     <section class="who">
-        <div class="container">
-            <h3 class="title white">Как будут распределены инвестиции</h3>
-            <ul class="who__list">
-                <li class="who__list_item">
-                    <div class="who__list_item-wrap">
-                        <div class="who__list_item-title">1 800 ₽</div>
-                        <div class="who__list_item-subtitle">Регистрация ИП</div>
-                    </div>
-                </li>
-                <li class="who__list_item">
-                    <div class="who__list_item-wrap">
-                        <div class="who__list_item-title">252 000₽</div>
-                        <div class="who__list_item-subtitle">Подготовка помещения</div>
-                    </div>
-                </li>
-                <li class="who__list_item">
-                    <div class="who__list_item-wrap">
-                        <div class="who__list_item-title">680 000 ₽</div>
-                        <div class="who__list_item-subtitle">Торговое оборудование</div>
-                    </div>
-                </li>
-                <li class="who__list_item">
-                    <div class="who__list_item-wrap">
-                        <div class="who__list_item-title">70 000 ₽</div>
-                        <div class="who__list_item-subtitle">Первоначальный запаз товара</div>
-                    </div>
-                </li>
-                <li class="who__list_item">
-                    <div class="who__list_item-big">
-                        <div class="who__list_item-title">Итого:</div>
-                        <div class="who__list_item-title">1 303 800 ₽</div>
-                    </div>
-                    <div class="who__list_item-img">
-                        <svg width="179" height="179" viewBox="0 0 179 179" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M77.9449 40.416H25.9817C21.2069 40.416 17.3212 44.3017 17.3212 49.0765V82.5235L9.35062 90.4912C6.37647 93.4493 4.01864 96.968 2.41362 100.844C0.808601 104.719 -0.0117274 108.875 0.000126659 113.069C0.000126659 114.819 0.147356 116.585 0.433153 118.318L4.92508 145.258C5.54873 149.006 6.57568 152.676 7.98803 156.204L11.5475 165.107V178.985H51.9633V165.107L53.9552 160.125C56.9718 152.612 58.2127 144.504 57.5811 136.432L56.8565 127.021H77.9449C82.7198 127.021 86.6055 123.136 86.6055 118.361V49.0765C86.6055 44.3017 82.7198 40.416 77.9449 40.416ZM40.4159 99.7609C38.385 101.079 36.9279 103.117 36.3368 105.465L34.6423 112.235V46.1897H40.4159V99.7609ZM23.0949 126.49C24.0014 126.814 24.9656 127.021 25.9817 127.021H29.8068C29.1693 128.51 28.4887 129.98 27.7658 131.43C27.5159 131.924 27.107 132.32 26.6048 132.553C26.1027 132.787 25.5365 132.845 24.9974 132.718C24.4582 132.591 23.9774 132.287 23.6324 131.854C23.2873 131.42 23.098 130.884 23.0949 130.33V126.49ZM23.0949 49.0765C23.0949 47.4859 24.3882 46.1897 25.9817 46.1897H28.8686V121.248H25.9817C24.3882 121.248 23.0949 119.951 23.0949 118.361V49.0765ZM46.1896 173.211H17.3212V167.437H46.1896V173.211ZM48.5944 157.983L47.1221 161.663H16.3887L13.3489 154.062C12.0914 150.919 11.1767 147.65 10.6208 144.311L6.1289 117.371C5.89235 115.949 5.77359 114.51 5.77382 113.069C5.77382 106.083 8.49322 99.5126 13.4326 94.5732L17.3212 90.6875V130.33C17.3235 132.514 18.1923 134.608 19.7369 136.153C21.2815 137.698 23.3758 138.566 25.5602 138.569C27.0916 138.573 28.5936 138.149 29.8962 137.344C31.1988 136.539 32.2499 135.385 32.9304 134.013C35.8773 128.116 38.1705 121.913 39.7693 115.517L41.9344 106.863C42.1559 105.967 42.6893 105.18 43.4389 104.643C44.1884 104.105 45.1049 103.853 46.0239 103.93C46.943 104.008 47.8042 104.41 48.4531 105.066C49.102 105.721 49.496 106.587 49.5644 107.506L51.8248 136.877C52.3768 144.067 51.2717 151.287 48.5944 157.983ZM80.8318 118.361C80.8318 119.951 79.5385 121.248 77.9449 121.248H56.412L55.3207 107.065C54.9512 102.235 50.9818 98.4502 46.1896 98.202V46.1897H77.9449C79.5385 46.1897 80.8318 47.4859 80.8318 49.0765V118.361Z" fill="#EBEBEB" />
-                            <path d="M57.7371 69.2843H75.0581V51.9632H57.7371V69.2843ZM63.5107 57.7369H69.2844V63.5106H63.5107V57.7369ZM69.2844 109.7H75.0581V115.474H69.2844V109.7ZM69.2844 98.1527H75.0581V103.926H69.2844V98.1527ZM69.2844 86.6053H75.0581V92.379H69.2844V86.6053ZM57.7371 86.6053H63.5107V115.474H57.7371V86.6053ZM167.437 34.9337V0H103.927V34.9337C100.669 35.6036 97.7419 37.376 95.6385 39.9521C93.5352 42.5282 92.3841 45.7506 92.3792 49.0764V164.55C92.3792 172.509 98.8544 178.984 106.813 178.984H164.55C172.509 178.984 178.985 172.509 178.985 164.55V49.0764C178.979 45.7508 177.828 42.5286 175.725 39.9526C173.621 37.3766 170.694 35.6041 167.437 34.9337ZM161.663 5.77369V34.6421H109.7V5.77369H161.663ZM121.248 40.4158H150.116V43.3027C150.116 44.8933 148.823 46.1895 147.229 46.1895H124.134C122.541 46.1895 121.248 44.8933 121.248 43.3027V40.4158ZM106.813 40.4158H115.474V43.3027C115.474 48.0775 119.36 51.9632 124.134 51.9632H147.229C152.004 51.9632 155.89 48.0775 155.89 43.3027V40.4158H164.55C169.325 40.4158 173.211 44.3015 173.211 49.0764V96.7093L169.75 99.3074C167.245 101.195 165.211 103.636 163.808 106.441C162.405 109.246 161.671 112.338 161.663 115.474V173.211H109.7V115.474C109.692 112.338 108.959 109.247 107.556 106.442C106.154 103.637 104.121 101.195 101.617 99.3074L98.1529 96.7093V49.0764C98.1529 44.3015 102.039 40.4158 106.813 40.4158ZM98.1529 164.55V103.926C101.767 106.637 103.927 110.953 103.927 115.474V172.679C102.243 172.086 100.784 170.986 99.7504 169.531C98.7166 168.075 98.1586 166.335 98.1529 164.55ZM167.437 172.679V115.474C167.437 110.956 169.597 106.64 173.211 103.929V164.55C173.205 166.335 172.647 168.075 171.613 169.531C170.58 170.986 169.121 172.086 167.437 172.679Z" fill="#EBEBEB" />
-                            <path d="M109.7 92.379H161.663C164.848 92.379 167.437 89.7895 167.437 86.6053V63.5106C167.437 60.3264 164.848 57.7369 161.663 57.7369H109.7C106.516 57.7369 103.927 60.3264 103.927 63.5106V86.6053C103.927 89.7895 106.516 92.379 109.7 92.379ZM109.7 63.5106H161.663L161.666 86.6053H109.7V63.5106ZM127.021 127.021H132.795V132.795H127.021V127.021ZM150.116 127.021H155.89V132.795H150.116V127.021ZM115.474 127.021H121.248V132.795H115.474V127.021ZM138.569 127.021H144.342V132.795H138.569V127.021ZM138.569 115.474H144.342V121.247H138.569V115.474ZM127.021 115.474H132.795V121.247H127.021V115.474ZM150.116 115.474H155.89V121.247H150.116V115.474ZM115.474 115.474H121.248V121.247H115.474V115.474ZM127.021 138.569H132.795V144.342H127.021V138.569ZM138.569 138.569H144.342V144.342H138.569V138.569ZM115.474 138.569H121.248V144.342H115.474V138.569ZM150.116 138.569H155.89V144.342H150.116V138.569ZM150.116 150.116H155.89V155.89H150.116V150.116ZM127.021 150.116H132.795V155.89H127.021V150.116ZM138.569 150.116H144.342V155.89H138.569V150.116ZM115.474 150.116H121.248V155.89H115.474V150.116ZM115.474 11.5474H155.89V17.3211H115.474V11.5474ZM150.116 23.0947H155.89V28.8684H150.116V23.0947ZM115.474 23.0947H144.342V28.8684H115.474V23.0947Z" fill="#EBEBEB" />
-                        </svg>
-                    </div>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <h3 class="title white">Как будут распределены инвестиции</h3>
+        <ul class="who__list">
+          <li class="who__list_item">
+            <div class="who__list_item-wrap">
+              <div class="who__list_item-title">1 800 ₽</div>
+              <div class="who__list_item-subtitle">Регистрация ИП</div>
+            </div>
+          </li>
+          <li class="who__list_item">
+            <div class="who__list_item-wrap">
+              <div class="who__list_item-title">252 000₽</div>
+              <div class="who__list_item-subtitle">Подготовка помещения</div>
+            </div>
+          </li>
+          <li class="who__list_item">
+            <div class="who__list_item-wrap">
+              <div class="who__list_item-title">680 000 ₽</div>
+              <div class="who__list_item-subtitle">Торговое оборудование</div>
+            </div>
+          </li>
+          <li class="who__list_item">
+            <div class="who__list_item-wrap">
+              <div class="who__list_item-title">70 000 ₽</div>
+              <div class="who__list_item-subtitle">
+                Первоначальный запаз товара
+              </div>
+            </div>
+          </li>
+          <li class="who__list_item">
+            <div class="who__list_item-big">
+              <div class="who__list_item-title">Итого:</div>
+              <div class="who__list_item-title">1 303 800 ₽</div>
+            </div>
+            <div class="who__list_item-img">
+              <svg
+                width="179"
+                height="179"
+                viewBox="0 0 179 179"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M77.9449 40.416H25.9817C21.2069 40.416 17.3212 44.3017 17.3212 49.0765V82.5235L9.35062 90.4912C6.37647 93.4493 4.01864 96.968 2.41362 100.844C0.808601 104.719 -0.0117274 108.875 0.000126659 113.069C0.000126659 114.819 0.147356 116.585 0.433153 118.318L4.92508 145.258C5.54873 149.006 6.57568 152.676 7.98803 156.204L11.5475 165.107V178.985H51.9633V165.107L53.9552 160.125C56.9718 152.612 58.2127 144.504 57.5811 136.432L56.8565 127.021H77.9449C82.7198 127.021 86.6055 123.136 86.6055 118.361V49.0765C86.6055 44.3017 82.7198 40.416 77.9449 40.416ZM40.4159 99.7609C38.385 101.079 36.9279 103.117 36.3368 105.465L34.6423 112.235V46.1897H40.4159V99.7609ZM23.0949 126.49C24.0014 126.814 24.9656 127.021 25.9817 127.021H29.8068C29.1693 128.51 28.4887 129.98 27.7658 131.43C27.5159 131.924 27.107 132.32 26.6048 132.553C26.1027 132.787 25.5365 132.845 24.9974 132.718C24.4582 132.591 23.9774 132.287 23.6324 131.854C23.2873 131.42 23.098 130.884 23.0949 130.33V126.49ZM23.0949 49.0765C23.0949 47.4859 24.3882 46.1897 25.9817 46.1897H28.8686V121.248H25.9817C24.3882 121.248 23.0949 119.951 23.0949 118.361V49.0765ZM46.1896 173.211H17.3212V167.437H46.1896V173.211ZM48.5944 157.983L47.1221 161.663H16.3887L13.3489 154.062C12.0914 150.919 11.1767 147.65 10.6208 144.311L6.1289 117.371C5.89235 115.949 5.77359 114.51 5.77382 113.069C5.77382 106.083 8.49322 99.5126 13.4326 94.5732L17.3212 90.6875V130.33C17.3235 132.514 18.1923 134.608 19.7369 136.153C21.2815 137.698 23.3758 138.566 25.5602 138.569C27.0916 138.573 28.5936 138.149 29.8962 137.344C31.1988 136.539 32.2499 135.385 32.9304 134.013C35.8773 128.116 38.1705 121.913 39.7693 115.517L41.9344 106.863C42.1559 105.967 42.6893 105.18 43.4389 104.643C44.1884 104.105 45.1049 103.853 46.0239 103.93C46.943 104.008 47.8042 104.41 48.4531 105.066C49.102 105.721 49.496 106.587 49.5644 107.506L51.8248 136.877C52.3768 144.067 51.2717 151.287 48.5944 157.983ZM80.8318 118.361C80.8318 119.951 79.5385 121.248 77.9449 121.248H56.412L55.3207 107.065C54.9512 102.235 50.9818 98.4502 46.1896 98.202V46.1897H77.9449C79.5385 46.1897 80.8318 47.4859 80.8318 49.0765V118.361Z"
+                  fill="#EBEBEB"
+                />
+                <path
+                  d="M57.7371 69.2843H75.0581V51.9632H57.7371V69.2843ZM63.5107 57.7369H69.2844V63.5106H63.5107V57.7369ZM69.2844 109.7H75.0581V115.474H69.2844V109.7ZM69.2844 98.1527H75.0581V103.926H69.2844V98.1527ZM69.2844 86.6053H75.0581V92.379H69.2844V86.6053ZM57.7371 86.6053H63.5107V115.474H57.7371V86.6053ZM167.437 34.9337V0H103.927V34.9337C100.669 35.6036 97.7419 37.376 95.6385 39.9521C93.5352 42.5282 92.3841 45.7506 92.3792 49.0764V164.55C92.3792 172.509 98.8544 178.984 106.813 178.984H164.55C172.509 178.984 178.985 172.509 178.985 164.55V49.0764C178.979 45.7508 177.828 42.5286 175.725 39.9526C173.621 37.3766 170.694 35.6041 167.437 34.9337ZM161.663 5.77369V34.6421H109.7V5.77369H161.663ZM121.248 40.4158H150.116V43.3027C150.116 44.8933 148.823 46.1895 147.229 46.1895H124.134C122.541 46.1895 121.248 44.8933 121.248 43.3027V40.4158ZM106.813 40.4158H115.474V43.3027C115.474 48.0775 119.36 51.9632 124.134 51.9632H147.229C152.004 51.9632 155.89 48.0775 155.89 43.3027V40.4158H164.55C169.325 40.4158 173.211 44.3015 173.211 49.0764V96.7093L169.75 99.3074C167.245 101.195 165.211 103.636 163.808 106.441C162.405 109.246 161.671 112.338 161.663 115.474V173.211H109.7V115.474C109.692 112.338 108.959 109.247 107.556 106.442C106.154 103.637 104.121 101.195 101.617 99.3074L98.1529 96.7093V49.0764C98.1529 44.3015 102.039 40.4158 106.813 40.4158ZM98.1529 164.55V103.926C101.767 106.637 103.927 110.953 103.927 115.474V172.679C102.243 172.086 100.784 170.986 99.7504 169.531C98.7166 168.075 98.1586 166.335 98.1529 164.55ZM167.437 172.679V115.474C167.437 110.956 169.597 106.64 173.211 103.929V164.55C173.205 166.335 172.647 168.075 171.613 169.531C170.58 170.986 169.121 172.086 167.437 172.679Z"
+                  fill="#EBEBEB"
+                />
+                <path
+                  d="M109.7 92.379H161.663C164.848 92.379 167.437 89.7895 167.437 86.6053V63.5106C167.437 60.3264 164.848 57.7369 161.663 57.7369H109.7C106.516 57.7369 103.927 60.3264 103.927 63.5106V86.6053C103.927 89.7895 106.516 92.379 109.7 92.379ZM109.7 63.5106H161.663L161.666 86.6053H109.7V63.5106ZM127.021 127.021H132.795V132.795H127.021V127.021ZM150.116 127.021H155.89V132.795H150.116V127.021ZM115.474 127.021H121.248V132.795H115.474V127.021ZM138.569 127.021H144.342V132.795H138.569V127.021ZM138.569 115.474H144.342V121.247H138.569V115.474ZM127.021 115.474H132.795V121.247H127.021V115.474ZM150.116 115.474H155.89V121.247H150.116V115.474ZM115.474 115.474H121.248V121.247H115.474V115.474ZM127.021 138.569H132.795V144.342H127.021V138.569ZM138.569 138.569H144.342V144.342H138.569V138.569ZM115.474 138.569H121.248V144.342H115.474V138.569ZM150.116 138.569H155.89V144.342H150.116V138.569ZM150.116 150.116H155.89V155.89H150.116V150.116ZM127.021 150.116H132.795V155.89H127.021V150.116ZM138.569 150.116H144.342V155.89H138.569V150.116ZM115.474 150.116H121.248V155.89H115.474V150.116ZM115.474 11.5474H155.89V17.3211H115.474V11.5474ZM150.116 23.0947H155.89V28.8684H150.116V23.0947ZM115.474 23.0947H144.342V28.8684H115.474V23.0947Z"
+                  fill="#EBEBEB"
+                />
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="start">
-        <div class="container">
-            <h3 class="title white mark">Этапы запуска</h3>
-            <h3 class="title white mark">вашего нового бизнеса</h3>
-            <ul class="start__list">
-                <li class="start__list_item">Заключение догоовра франчайзинга</li>
-                <li class="start__list_item">Обучение у франчайзера основам ведения бизнеса</li>
-                <li class="start__list_item">Поиск помещения и заключение договора аренды</li>
-                <li class="start__list_item">Ремонт и оформление торговой точки согласно фирменному стилю</li>
-                <li class="start__list_item">Закупка торгового оборудования и товара</li>
-                <li class="start__list_item">Поиск персонала и его обучение</li>
-                <li class="start__list_item">Торжественное открытие</li>
-            </ul>
-        </div>
+      <div class="container">
+        <h3 class="title white mark">Этапы запуска</h3>
+        <h3 class="title white mark">вашего нового бизнеса</h3>
+        <ul class="start__list">
+          <li class="start__list_item">Заключение догоовра франчайзинга</li>
+          <li class="start__list_item">
+            Обучение у франчайзера основам ведения бизнеса
+          </li>
+          <li class="start__list_item">
+            Поиск помещения и заключение договора аренды
+          </li>
+          <li class="start__list_item">
+            Ремонт и оформление торговой точки согласно фирменному стилю
+          </li>
+          <li class="start__list_item">
+            Закупка торгового оборудования и товара
+          </li>
+          <li class="start__list_item">Поиск персонала и его обучение</li>
+          <li class="start__list_item">Торжественное открытие</li>
+        </ul>
+      </div>
     </section>
 
     <section class="why">
-        <div class="container">
-            <h3 class="title">Почему мы развиваем сеть «ИндиФуд» по франшизе?</h3>
-            <ul class="why__list">
-                <li class="why__list_item">
-                    <div class="why__list_item-img">
-                        <img src="./icons/why/1.png" alt="1">
-                    </div>
-                    <p>Компания <b>«ИндиФуд»</b> основана в 2018 года. Всего за 2 года мы открыли 12 собственных и 40 точек по франшизе, каждая из которых приносит прибыль. </p>
-                </li>
-                <li class="why__list_item">
-                    <div class="why__list_item-img">
-                        <img src="./icons/why/1.png" alt="1">
-                    </div>
-                    <p>Мы создали бизнес модель, которая при небольших стартовых инвестициях приносит стабильные результаты</p>
-                </li>
-                <li class="why__list_item">
-                    <div class="why__list_item-img">
-                        <img src="./icons/why/1.png" alt="1">
-                    </div>
-                    <p>У нас есть продукт, который востребован жителями нескольких десятков регионов. В течение 5 лет мы хотим утроить объем отгружаемой продукции, увеличив географию присутствия</p>
-                </li>
-                <li class="why__list_item">
-                    <div class="why__list_item-img">
-                        <img src="./icons/why/1.png" alt="1">
-                    </div>
-                    <p>Наша компания добилась высоких результатов и понимаем, что для достижения новых масштабных целей нам нужны сильные партнеры</p>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <h3 class="title">Почему мы развиваем сеть «ИндиФуд» по франшизе?</h3>
+        <ul class="why__list">
+          <li class="why__list_item">
+            <div class="why__list_item-img">
+              <svg
+                width="55"
+                height="64"
+                viewBox="0 0 55 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.560791 55.0118C0.560791 60.8618 14.5217 63.5237 27.5001 63.5237C40.4785 63.5237 54.4393 60.8618 54.4393 55.0118C54.4393 49.9975 44.25 47.4749 34.1873 46.7475L34.3141 46.4999C34.9025 44.8164 36.1268 43.4159 37.737 42.5844C40.5241 41.1325 42.9616 39.116 44.8864 36.6699C46.8112 34.2238 48.1789 31.4045 48.8981 28.4005C49.6173 25.3966 49.6714 22.2773 49.0567 19.2513C48.442 16.2253 47.1728 13.3623 45.3338 10.854C43.4949 8.34571 41.1287 6.24983 38.3935 4.7066C35.6584 3.16336 32.6173 2.20836 29.4737 1.90547C26.3302 1.60258 23.1566 1.95879 20.1654 2.95027C17.1742 3.94175 14.4342 5.54563 12.1288 7.65464C9.58451 10.0393 7.6589 12.9819 6.51167 16.2386C5.36444 19.4952 5.02865 22.972 5.53213 26.3807C6.03561 29.7894 7.36386 33.0318 9.40675 35.839C11.4496 38.6462 14.1483 40.9373 17.279 42.5225C18.8976 43.3693 20.1184 44.7944 20.686 46.4999L20.8128 46.8249C10.8453 47.4749 0.560791 49.9975 0.560791 55.0118ZM18.7369 39.7677C14.9571 37.8511 11.9456 34.7507 10.1848 30.9635C8.42409 27.1763 8.0161 22.9214 9.02624 18.8808C10.0364 14.8401 12.4062 11.2476 15.7558 8.6789C19.1055 6.11021 23.2412 4.71405 27.5001 4.71416H28.2924C32.4708 4.89948 36.47 6.42505 39.6709 9.05464C42.8717 11.6842 45.0955 15.2711 45.9979 19.2598C46.9002 23.2485 46.4309 27.4166 44.6624 31.1184C42.894 34.8203 39.9252 37.8494 36.2157 39.7368C33.9 40.932 32.1335 42.9391 31.2716 45.3546L28.2132 53.6963C28.164 53.8645 28.06 54.0124 27.9171 54.1177C27.7741 54.2231 27.5999 54.28 27.4208 54.28C27.2418 54.28 27.0676 54.2231 26.9246 54.1177C26.7816 54.0124 26.6777 53.8645 26.6285 53.6963L23.5701 45.3701C22.7401 42.9742 21.0137 40.9731 18.7369 39.7677ZM21.9062 49.7654L23.7286 54.7487C24.0076 55.5028 24.5179 56.1547 25.19 56.6154C25.862 57.0761 26.6631 57.3232 27.4842 57.3232C28.3053 57.3232 29.1064 57.0761 29.7785 56.6154C30.4505 56.1547 30.9608 55.5028 31.2399 54.7487L33.0622 49.7808C45.1849 50.5392 51.27 53.5261 51.27 55.0118C51.27 56.8535 42.8871 60.4285 27.5001 60.4285C12.113 60.4285 3.73012 56.8535 3.73012 55.0118C3.73012 53.6189 9.2289 50.5701 21.9221 49.7654H21.9062Z"
+                  fill="#F76615"
+                />
+                <path
+                  d="M27.5 31.0236C29.0671 31.0236 30.599 30.5697 31.9019 29.7195C33.2049 28.8692 34.2205 27.6607 34.8202 26.2467C35.4199 24.8328 35.5768 23.2769 35.271 21.7758C34.9653 20.2748 34.2107 18.896 33.1026 17.8138C31.9945 16.7316 30.5827 15.9946 29.0457 15.6961C27.5088 15.3975 25.9156 15.5507 24.4679 16.1364C23.0201 16.7221 21.7826 17.7139 20.912 18.9864C20.0414 20.2589 19.5767 21.755 19.5767 23.2855C19.5767 24.3016 19.7816 25.3079 20.1798 26.2467C20.578 27.1855 21.1616 28.0386 21.8973 28.7571C23.3833 30.2083 25.3986 31.0236 27.5 31.0236ZM27.5 18.6426C28.4402 18.6426 29.3594 18.9149 30.1411 19.4251C30.9229 19.9352 31.5323 20.6603 31.8921 21.5087C32.2519 22.3571 32.3461 23.2906 32.1626 24.1912C31.9792 25.0919 31.5264 25.9191 30.8616 26.5685C30.1967 27.2178 29.3496 27.66 28.4274 27.8391C27.5053 28.0183 26.5494 27.9263 25.6807 27.5749C24.812 27.2235 24.0696 26.6284 23.5472 25.8649C23.0248 25.1014 22.746 24.2037 22.746 23.2855C22.746 22.0541 23.2469 20.8732 24.1384 20.0025C25.0299 19.1318 26.2391 18.6426 27.5 18.6426Z"
+                  fill="#F76615"
+                />
+              </svg>
+            </div>
+            <p>
+              Компания <b>«ИндиФуд»</b> основана в 2018 году. Всего за 2 года мы
+              открыли 12 собственных и 40 точек по франшизе, каждая из которых
+              приносит прибыль.
+            </p>
+          </li>
+          <li class="why__list_item">
+            <div class="why__list_item-img">
+              <svg
+                width="65"
+                height="65"
+                viewBox="0 0 65 65"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.75 43.3333C4.90411 43.3333 0 44.8218 0 47.6667V60.6667C0 63.5115 4.90411 65 9.75 65C14.5959 65 19.5 63.5115 19.5 60.6667V47.6667C19.5 44.8218 14.5959 43.3333 9.75 43.3333ZM9.75 45.5C14.6758 45.5 17.3333 47.0383 17.3333 47.6667C17.3333 48.295 14.6758 49.8333 9.75 49.8333C4.82422 49.8333 2.16667 48.295 2.16667 47.6667C2.16667 47.0383 4.82422 45.5 9.75 45.5ZM9.75 62.8333C4.82422 62.8333 2.16667 61.295 2.16667 60.6667V59.15C4.54634 60.2253 7.13981 60.744 9.75 60.6667C12.3602 60.744 14.9537 60.2253 17.3333 59.15V60.6667C17.3333 61.295 14.6758 62.8333 9.75 62.8333ZM9.75 58.5C4.82422 58.5 2.16667 56.9617 2.16667 56.3333V54.8167C4.54634 55.8919 7.13981 56.4106 9.75 56.3333C12.3602 56.4106 14.9537 55.8919 17.3333 54.8167V56.3333C17.3333 56.9617 14.6758 58.5 9.75 58.5ZM9.75 54.1667C4.82422 54.1667 2.16667 52.6283 2.16667 52V50.4833C4.54634 51.5586 7.13981 52.0773 9.75 52C12.3602 52.0773 14.9537 51.5586 17.3333 50.4833V52C17.3333 52.6283 14.6758 54.1667 9.75 54.1667ZM32.5 34.6667C27.6541 34.6667 22.75 36.1552 22.75 39V60.6667C22.75 63.5115 27.6541 65 32.5 65C37.3459 65 42.25 63.5115 42.25 60.6667V39C42.25 36.1552 37.3459 34.6667 32.5 34.6667ZM32.5 36.8333C37.4258 36.8333 40.0833 38.3717 40.0833 39C40.0833 39.6283 37.4258 41.1667 32.5 41.1667C27.5742 41.1667 24.9167 39.6283 24.9167 39C24.9167 38.3717 27.5742 36.8333 32.5 36.8333ZM32.5 62.8333C27.5742 62.8333 24.9167 61.295 24.9167 60.6667V59.15C27.2963 60.2253 29.8898 60.744 32.5 60.6667C35.1102 60.744 37.7037 60.2253 40.0833 59.15V60.6667C40.0833 61.295 37.4258 62.8333 32.5 62.8333ZM32.5 58.5C27.5742 58.5 24.9167 56.9617 24.9167 56.3333V54.8167C27.2963 55.8919 29.8898 56.4106 32.5 56.3333C35.1102 56.4106 37.7037 55.8919 40.0833 54.8167V56.3333C40.0833 56.9617 37.4258 58.5 32.5 58.5ZM32.5 54.1667C27.5742 54.1667 24.9167 52.6283 24.9167 52V50.4833C27.2963 51.5586 29.8898 52.0773 32.5 52C35.1102 52.0773 37.7037 51.5586 40.0833 50.4833V52C40.0833 52.6283 37.4258 54.1667 32.5 54.1667ZM32.5 49.8333C27.5742 49.8333 24.9167 48.295 24.9167 47.6667V46.15C27.2963 47.2253 29.8898 47.744 32.5 47.6667C35.1102 47.744 37.7037 47.2253 40.0833 46.15V47.6667C40.0833 48.295 37.4258 49.8333 32.5 49.8333ZM32.5 45.5C27.5742 45.5 24.9167 43.9617 24.9167 43.3333V41.8167C27.2963 42.8919 29.8898 43.4106 32.5 43.3333C35.1102 43.4106 37.7037 42.8919 40.0833 41.8167V43.3333C40.0833 43.9617 37.4258 45.5 32.5 45.5ZM55.25 21.6667C50.4041 21.6667 45.5 23.1552 45.5 26V60.6667C45.5 63.5115 50.4041 65 55.25 65C60.0959 65 65 63.5115 65 60.6667V26C65 23.1552 60.0959 21.6667 55.25 21.6667ZM55.25 23.8333C60.1758 23.8333 62.8333 25.3717 62.8333 26C62.8333 26.6283 60.1758 28.1667 55.25 28.1667C50.3242 28.1667 47.6667 26.6283 47.6667 26C47.6667 25.3717 50.3242 23.8333 55.25 23.8333ZM55.25 62.8333C50.3242 62.8333 47.6667 61.295 47.6667 60.6667V59.15C50.0463 60.2253 52.6398 60.744 55.25 60.6667C57.8602 60.744 60.4537 60.2253 62.8333 59.15V60.6667C62.8333 61.295 60.1758 62.8333 55.25 62.8333ZM55.25 58.5C50.3242 58.5 47.6667 56.9617 47.6667 56.3333V54.8167C50.0463 55.8919 52.6398 56.4106 55.25 56.3333C57.8602 56.4106 60.4537 55.8919 62.8333 54.8167V56.3333C62.8333 56.9617 60.1758 58.5 55.25 58.5ZM55.25 54.1667C50.3242 54.1667 47.6667 52.6283 47.6667 52V50.4833C50.0463 51.5586 52.6398 52.0773 55.25 52C57.8602 52.0773 60.4537 51.5586 62.8333 50.4833V52C62.8333 52.6283 60.1758 54.1667 55.25 54.1667ZM55.25 49.8333C50.3242 49.8333 47.6667 48.295 47.6667 47.6667V46.15C50.0463 47.2253 52.6398 47.744 55.25 47.6667C57.8602 47.744 60.4537 47.2253 62.8333 46.15V47.6667C62.8333 48.295 60.1758 49.8333 55.25 49.8333ZM55.25 45.5C50.3242 45.5 47.6667 43.9617 47.6667 43.3333V41.8167C50.0463 42.8919 52.6398 43.4106 55.25 43.3333C57.8602 43.4106 60.4537 42.8919 62.8333 41.8167V43.3333C62.8333 43.9617 60.1758 45.5 55.25 45.5ZM55.25 41.1667C50.3242 41.1667 47.6667 39.6283 47.6667 39V37.4833C50.0463 38.5586 52.6398 39.0773 55.25 39C57.8602 39.0773 60.4537 38.5586 62.8333 37.4833V39C62.8333 39.6283 60.1758 41.1667 55.25 41.1667ZM55.25 36.8333C50.3242 36.8333 47.6667 35.295 47.6667 34.6667V33.15C50.0463 34.2253 52.6398 34.744 55.25 34.6667C57.8602 34.744 60.4537 34.2253 62.8333 33.15V34.6667C62.8333 35.295 60.1758 36.8333 55.25 36.8333ZM55.25 32.5C50.3242 32.5 47.6667 30.9617 47.6667 30.3333V28.8167C50.0463 29.8919 52.6398 30.4106 55.25 30.3333C57.8602 30.4106 60.4537 29.8919 62.8333 28.8167V30.3333C62.8333 30.9617 60.1758 32.5 55.25 32.5ZM53.0833 0V2.16667H61.3015L40.7182 22.75H18.0093L0.369281 38.1844L1.79739 39.8156L18.824 24.9167H41.6152L62.8333 3.6985V11.9167H65V0H53.0833Z"
+                  fill="#F76615"
+                />
+              </svg>
+            </div>
+            <p>
+              Мы создали бизнес модель, которая при небольших стартовых
+              инвестициях приносит стабильные результаты
+            </p>
+          </li>
+          <li class="why__list_item">
+            <div class="why__list_item-img">
+              <svg
+                width="65"
+                height="65"
+                viewBox="0 0 65 65"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M61.9496 36.9829C66.4665 34.9397 65.8146 28.0802 61.0018 26.9057C64.4437 22.551 61.404 15.4278 55.5518 16.0217C56.8032 13.3852 56.1091 9.91096 53.6946 8.17245C51.1662 6.35209 47.51 7.21932 46.1051 10.0169L39.9476 22.2779C34.8631 20.9595 29.3122 20.9101 24.4433 23.0595C21.2647 22.1056 22.9239 16.8538 23.1766 14.6601C23.3129 13.475 21.4252 13.2036 21.2827 14.4421C20.9442 17.3839 19.5575 21.9146 22.3988 24.1186C18.0648 26.7272 15.2709 31.5235 17.1482 36.5961C18.6567 40.6717 22.654 43.2627 27.8412 43.5266C31.2 43.6978 34.5475 42.9489 37.6056 41.5782C38.6939 41.0903 37.9639 39.3292 36.8256 39.8386C33.8526 41.1714 30.8621 41.7712 27.9379 41.6228C24.1765 41.4313 20.32 39.6734 18.9359 35.9342C16.978 30.6439 21.1614 26.4441 25.673 24.6076C28.5919 23.4195 33.4797 22.4049 40.1886 24.3181C43.4851 25.2582 46.5898 27.7205 48.4268 30.5986C47.5315 31.7145 45.1137 34.527 41.6424 37.0295C40.681 37.7223 41.733 39.314 42.7571 38.5758C45.909 36.3035 48.2101 33.8267 49.4107 32.405C50.9126 35.6812 51.2235 39.4744 50.2395 43.1318C48.7475 48.6772 43.5595 52.7027 37.6858 52.3278C37.5046 52.3175 37.3242 52.359 37.1659 52.4476C37.0075 52.5362 36.8777 52.6681 36.7917 52.8279L34.1744 57.6938H31.9066C29.8659 53.9738 25.2939 52.0084 21.4424 50.815C15.3635 48.0634 11.3875 44.5431 9.60486 40.3213C6.99747 34.1467 9.71656 28.1008 10.8776 25.5189C11.2535 24.6831 11.6274 23.8746 12.0699 23.0699C13.3865 20.6755 15.1898 17.3961 14.1804 15.1673C13.7572 14.2327 12.9256 13.6226 11.7089 13.3537C9.92879 12.9602 8.17745 11.803 7.64789 9.98047C7.06381 7.97051 8.16258 6.50015 9.16311 4.90397C10.7325 3.07853 13.2129 1.75635 15.8603 2.00886C18.5042 2.26087 21.244 3.32317 21.5205 9.29104C21.5756 10.4798 23.4824 10.4497 23.4248 9.20297C23.2885 6.26174 22.6077 4.10207 21.3438 2.60044C20.1221 1.14927 18.3875 0.335039 16.0412 0.111371C12.8437 -0.194394 9.68034 1.34256 7.64179 3.76542C7.15213 4.26639 2.25952 9.31468 0.131874 12.8793C-0.268695 13.5503 0.298228 14.4123 1.07242 14.313L7.65577 13.4627C9.08254 15.5722 6.92618 18.079 5.44641 19.4283C3.59822 21.1133 2.97767 23.6551 3.86535 25.9037C4.52746 27.581 5.90645 28.6765 7.54571 28.8769C6.56538 32.1455 5.95513 36.5786 7.84868 41.0627C9.79459 45.6709 14.0012 49.4821 20.3768 52.4241L22.3539 58.9524C22.5461 59.587 23.2344 59.6919 23.7929 59.6309L23.2674 63.0201H18.6643C17.4715 63.0201 17.4172 64.9263 18.6643 64.9263H34.1006C35.2934 64.9263 35.3477 63.0201 34.1006 63.0201H33.3424L33.9182 59.6C34.4666 59.6587 35.2821 59.6582 35.5833 59.0984L38.198 54.2372C39.2001 54.2181 41.2885 54.0597 43.5891 53.1941C45.0296 54.9759 46.4328 57.4296 49.0198 57.4296C51.4464 57.4296 53.4596 55.2907 53.3026 52.8702C57.2303 53.6284 60.4929 49.3898 58.8378 45.7728C63.1785 45.4841 65.1384 39.9478 61.9496 36.9829ZM5.56828 8.85197C5.5646 9.85771 5.81203 10.8256 6.30588 11.7153L2.91337 12.1535C3.70879 11.0667 4.65429 9.91274 5.56828 8.85197ZM8.12636 27.0072C7.01831 27.0235 6.08983 26.3473 5.63869 25.2041C5.18728 24.0606 5.20253 22.2309 6.7311 20.8373C8.93017 18.8323 10.0363 16.8424 10.0186 14.9233C10.018 14.8614 12.175 15.3601 12.444 15.9541C13.0599 17.3139 11.3294 20.461 10.3996 22.1517C10.1559 22.5948 8.36159 27.0023 8.12636 27.0072ZM22.6659 53.4062C23.1673 53.6061 23.6717 53.7984 24.1789 53.983C25.228 54.3648 26.1081 54.8026 26.8471 55.2565L25.8826 57.7316L23.9743 57.7256L22.6659 53.4062ZM31.4096 63.0206H25.1966L25.7212 59.6373L26.5302 59.6399H26.5331C26.725 59.6399 26.9125 59.582 27.0709 59.4737C27.2294 59.3654 27.3515 59.2118 27.4212 59.0329L28.4373 56.4256C29.9191 57.7336 30.3845 58.8989 30.4131 58.9736C30.48 59.1573 30.6019 59.316 30.7621 59.4282C30.9223 59.5403 31.1131 59.6005 31.3087 59.6005H31.9854L31.4096 63.0206ZM63.1552 31.9691C63.2101 33.8282 61.7993 35.4481 59.9157 35.5492L52.4696 35.9483C52.2401 34.5685 51.8434 33.2217 51.2883 31.9377L54.4291 30.6088L58.2543 28.9904C60.4538 28.013 63.0965 29.4826 63.1552 31.9691ZM47.8086 10.8726C50.1315 6.53192 56.8217 12.0865 53.1224 16.2751L45.5117 24.8924C44.3756 24.0711 43.118 23.3542 41.795 22.8474L47.8086 10.8726ZM47.0005 26.0861L52.9437 19.3569C57.7746 13.8875 64.5639 24.2452 57.5153 27.2333L50.431 30.2306L50.4013 30.179C50.3998 30.1763 50.3982 30.1735 50.3966 30.171C50.2077 29.8448 50.0079 29.5252 49.7974 29.2125C49.1138 28.2003 48.1529 27.1067 47.0005 26.0861ZM51.3791 53.5002C51.0822 55.4513 48.4852 56.2183 47.2199 54.6535L45.3813 52.3793C46.5846 51.7283 47.8316 50.826 48.9518 49.5755L50.7945 51.5828C51.0298 51.8378 51.2046 52.1427 51.3058 52.4747C51.4071 52.8067 51.4321 53.1572 51.3791 53.5002ZM56.6381 49.8749C55.3901 51.331 53.2479 51.4365 51.9352 50.0064L50.1315 48.0416C50.9242 46.8395 51.5983 45.399 52.0681 43.6699L55.3832 44.9449C57.3355 45.6962 58.0286 48.2779 56.6381 49.8749ZM61.4632 41.7874C60.8386 43.4121 59.0205 44.3016 57.3667 43.6653L56.0676 43.1656L56.067 43.1653L52.4765 41.7843C52.6883 40.4829 52.7572 39.1622 52.6821 37.8458L58.3373 37.5427C60.5554 37.4216 62.2494 39.7042 61.4632 41.7874Z"
+                  fill="#F76615"
+                />
+                <path
+                  d="M11.8897 6.43151C11.8011 6.51992 11.7308 6.62492 11.6827 6.74052C11.6347 6.85611 11.61 6.98003 11.6099 7.1052C11.6098 7.23036 11.6343 7.35433 11.6821 7.47C11.7299 7.58568 11.8001 7.6908 11.8885 7.77936C11.9769 7.86798 12.0819 7.9383 12.1975 7.98632C12.3131 8.03434 12.437 8.05911 12.5622 8.05922C12.6874 8.05933 12.8114 8.03477 12.927 7.98694C13.0427 7.93912 13.1478 7.86897 13.2364 7.78051C13.6452 7.37244 14.3104 7.37231 14.7195 7.78063C14.8078 7.86906 14.9128 7.93918 15.0283 7.98696C15.1439 8.03474 15.2677 8.05925 15.3927 8.05907C15.5813 8.05906 15.7657 8.00311 15.9224 7.89829C16.0792 7.79348 16.2013 7.64452 16.2734 7.47026C16.3455 7.29601 16.3643 7.10428 16.3274 6.91936C16.2904 6.73443 16.1995 6.56461 16.066 6.43138C14.9147 5.28216 13.0412 5.28178 11.8897 6.43151Z"
+                  fill="#F76615"
+                />
+              </svg>
+            </div>
+            <p>
+              У нас есть продукт, который востребован жителями нескольких
+              десятков регионов. В течение 5 лет мы хотим утроить объем
+              отгружаемой продукции, увеличив географию присутствия
+            </p>
+          </li>
+          <li class="why__list_item">
+            <div class="why__list_item-img">
+              <svg
+                width="65"
+                height="65"
+                viewBox="0 0 65 65"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32.5021 26.1021C35.0835 26.1021 37.607 25.3366 39.7534 23.9026C41.8998 22.4685 43.5727 20.4302 44.5606 18.0454C45.5484 15.6607 45.8069 13.0366 45.3033 10.5049C44.7997 7.97325 43.5566 5.64778 41.7312 3.82256C39.9059 1.99734 37.5802 0.754354 35.0484 0.250778C32.5166 -0.252799 29.8922 0.00565483 27.5073 0.993456C25.1223 1.98126 23.0839 3.65404 21.6497 5.80027C20.2156 7.9465 19.4501 10.4698 19.4501 13.051C19.4541 16.5111 20.8306 19.8283 23.2774 22.275C25.7243 24.7217 29.0417 26.098 32.5021 26.1021ZM32.5021 1.53542C34.7798 1.53542 37.0064 2.2108 38.9003 3.47615C40.7942 4.7415 42.2703 6.53999 43.1419 8.6442C44.0136 10.7484 44.2416 13.0638 43.7973 15.2976C43.3529 17.5314 42.2561 19.5833 40.6455 21.1938C39.0348 22.8043 36.9828 23.901 34.7488 24.3454C32.5149 24.7897 30.1993 24.5617 28.0949 23.6901C25.9906 22.8185 24.1919 21.3425 22.9265 19.4488C21.661 17.555 20.9856 15.3286 20.9856 13.051C20.9891 9.99798 22.2036 7.07099 24.3626 4.91215C26.5216 2.75332 29.4488 1.53894 32.5021 1.53542Z"
+                  fill="#F76615"
+                />
+                <path
+                  d="M28.3397 19.0228C28.5536 19.2368 28.8074 19.4065 29.0869 19.5224C29.3664 19.6382 29.6659 19.6978 29.9684 19.6978C30.2709 19.6978 30.5705 19.6382 30.8499 19.5224C31.1294 19.4065 31.3833 19.2368 31.5971 19.0228L40.2821 10.3375C40.7138 9.90541 40.9563 9.31965 40.9563 8.7089C40.9563 8.09816 40.7138 7.51239 40.2821 7.08034C40.0682 6.86647 39.8143 6.69682 39.5348 6.58108C39.2554 6.46533 38.9559 6.40576 38.6534 6.40576C38.3509 6.40576 38.0514 6.46533 37.7719 6.58108C37.4925 6.69682 37.2386 6.86647 37.0247 7.08034L29.9613 14.1432L27.9774 12.1462C27.5451 11.7145 26.9591 11.4723 26.3482 11.4726C25.7374 11.473 25.1517 11.716 24.72 12.1482C24.2883 12.5804 24.046 13.1664 24.0464 13.7772C24.0468 14.388 24.2898 14.9737 24.722 15.4054L28.3397 19.0228ZM25.8061 13.2322C25.8774 13.1609 25.9621 13.1043 26.0553 13.0657C26.1484 13.0271 26.2483 13.0072 26.3492 13.0072C26.4501 13.0072 26.5499 13.0271 26.6431 13.0657C26.7363 13.1043 26.821 13.1609 26.8923 13.2322L29.431 15.7646C29.5023 15.836 29.587 15.8926 29.6801 15.9312C29.7733 15.9698 29.8732 15.9897 29.9741 15.9897C30.0749 15.9897 30.1748 15.9698 30.268 15.9312C30.3612 15.8926 30.4458 15.836 30.5171 15.7646L38.1119 8.16537C38.1832 8.09403 38.2678 8.03743 38.361 7.99882C38.4542 7.96021 38.5541 7.94034 38.6549 7.94034C38.7558 7.94034 38.8557 7.96021 38.9488 7.99882C39.042 8.03743 39.1267 8.09403 39.198 8.16537C39.2693 8.23666 39.3259 8.32131 39.3645 8.41449C39.4032 8.50766 39.423 8.60753 39.423 8.70839C39.423 8.80925 39.4032 8.90912 39.3645 9.00229C39.3259 9.09547 39.2693 9.18012 39.198 9.25142L30.512 17.9367C30.4407 18.0081 30.356 18.0647 30.2629 18.1033C30.1697 18.1419 30.0698 18.1618 29.9689 18.1618C29.8681 18.1618 29.7682 18.1419 29.675 18.1033C29.5818 18.0647 29.4972 18.0081 29.4259 17.9367L25.8061 14.3173C25.7348 14.2461 25.6782 14.1615 25.6396 14.0684C25.601 13.9753 25.5812 13.8755 25.5812 13.7747C25.5812 13.674 25.601 13.5742 25.6396 13.4811C25.6782 13.388 25.7348 13.3034 25.8061 13.2322Z"
+                  fill="#F76615"
+                />
+                <path
+                  d="M63.8524 14.9354L44.5048 26.1081C44.3285 26.2098 44.1998 26.3773 44.147 26.5739C44.0942 26.7704 44.1217 26.9799 44.2233 27.1562L44.8631 28.2638L41.3293 30.3049L37.9511 29.7931C36.0852 29.5144 34.179 29.8296 32.502 30.6938C30.8257 29.829 28.9195 29.5139 27.054 29.7931L23.6758 30.3049L20.141 28.2648L20.7808 27.1573C20.8825 26.9811 20.9101 26.7717 20.8575 26.5751C20.8049 26.3786 20.6765 26.211 20.5003 26.1091L1.15165 14.9354C1.03497 14.868 0.902624 14.8325 0.767898 14.8325C0.633172 14.8325 0.500812 14.8679 0.384112 14.9352C0.267413 15.0026 0.170484 15.0994 0.10306 15.216C0.0356367 15.3327 9.32212e-05 15.465 0 15.5997V41.5994C1.72627e-05 41.7342 0.0354956 41.8667 0.102875 41.9834C0.170254 42.1002 0.267165 42.1972 0.383882 42.2647L8.47101 46.9365C8.55831 46.987 8.65471 47.0198 8.75471 47.033C8.8547 47.0463 8.95632 47.0397 9.05376 47.0136C9.15121 46.9876 9.24256 46.9426 9.32261 46.8812C9.40266 46.8199 9.46983 46.7433 9.52028 46.656L10.1601 45.5474L13.7092 47.5947C14.166 48.605 14.7258 49.5654 15.3799 50.4608L14.7339 51.2305C14.3369 51.6996 14.0782 52.2698 13.9866 52.8775C13.8951 53.4852 13.9743 54.1063 14.2155 54.6715C14.4567 55.2367 14.8504 55.7237 15.3525 56.0781C15.8546 56.4325 16.4453 56.6402 17.0587 56.6782C16.7836 57.3307 16.7246 58.0542 16.8904 58.7427C17.0562 59.4312 17.438 60.0486 17.98 60.5044C18.5233 60.9583 19.1976 61.2263 19.9042 61.2692C20.6109 61.3121 21.3127 61.1277 21.9069 60.7429C22.0713 61.4281 22.4509 62.0426 22.99 62.4964C23.5723 62.9841 24.304 63.2577 25.0635 63.2719C25.823 63.2861 26.5644 63.0398 27.1645 62.5742C27.3143 63.1094 27.5962 63.5984 27.9842 63.9964C28.3722 64.3943 28.854 64.6885 29.3853 64.8518C29.9165 65.0151 30.4803 65.0424 31.0249 64.9312C31.5695 64.8199 32.0774 64.5737 32.502 64.215C32.9262 64.574 33.4337 64.8206 33.9781 64.9323C34.5224 65.0439 35.0861 65.017 35.6173 64.8539C36.1485 64.6908 36.6302 64.3969 37.0182 63.9991C37.4061 63.6013 37.6879 63.1123 37.8375 62.5772C38.2739 62.919 38.7892 63.1457 39.336 63.2365C39.8828 63.3273 40.4437 63.2793 40.9672 63.0969C41.4906 62.9145 41.9599 62.6036 42.3319 62.1927C42.7039 61.7817 42.9667 61.2839 43.0962 60.745C43.6901 61.1317 44.3927 61.3173 45.1002 61.2744C45.8076 61.2315 46.4826 60.9623 47.0254 60.5065C47.5682 60.0508 47.9502 59.4327 48.1149 58.7434C48.2796 58.0541 48.2184 57.3301 47.9403 56.6782C48.5536 56.6405 49.1443 56.433 49.6464 56.0789C50.1485 55.7248 50.5422 55.238 50.7836 54.673C51.0249 54.1079 51.1043 53.4869 51.0129 52.8794C50.9215 52.2718 50.6629 51.7016 50.2661 51.2326L49.6201 50.4628C50.2745 49.5677 50.8344 48.6072 51.2908 47.5967L54.8399 45.5495L55.4797 46.6581C55.5302 46.7454 55.5973 46.8219 55.6774 46.8833C55.7574 46.9446 55.8488 46.9896 55.9462 47.0157C56.0437 47.0417 56.1453 47.0483 56.2453 47.0351C56.3453 47.0218 56.4417 46.989 56.529 46.9385L64.6161 42.2668C64.7328 42.1993 64.8297 42.1023 64.8971 41.9855C64.9645 41.8687 65 41.7362 65 41.6014V15.5997C64.9995 15.4656 64.9639 15.3339 64.8967 15.2179C64.8294 15.1018 64.733 15.0054 64.6169 14.9382C64.5008 14.871 64.3692 14.8354 64.2351 14.8349C64.1009 14.8344 63.969 14.869 63.8524 14.9354ZM1.53553 41.1603V16.9294L13.7522 23.982L3.25839 42.1552L1.53553 41.1603ZM8.57849 45.2271L4.58612 42.9229L15.082 24.7497L19.0744 27.0539L8.57849 45.2271ZM16.1353 54.7466C15.9551 54.5955 15.8063 54.4104 15.6976 54.2018C15.5889 53.9932 15.5224 53.7652 15.5019 53.5308C15.4813 53.2965 15.5072 53.0604 15.5779 52.8361C15.6487 52.6118 15.763 52.4036 15.9142 52.2234L17.7088 50.0851C17.8599 49.9047 18.0451 49.7558 18.2538 49.6471C18.4625 49.5383 18.6906 49.4717 18.9251 49.4512C19.1596 49.4306 19.3958 49.4565 19.6202 49.5274C19.8447 49.5982 20.053 49.7126 20.2332 49.864C20.597 50.1693 20.8247 50.6067 20.8662 51.0798C20.9077 51.553 20.7595 52.0233 20.4543 52.3872L18.6587 54.5266C18.3532 54.8902 17.9158 55.1177 17.4426 55.159C16.9694 55.2003 16.4992 55.0519 16.1353 54.7466ZM21.4913 59.1133C21.3401 59.2937 21.1548 59.4424 20.9461 59.5511C20.7374 59.6598 20.5093 59.7263 20.2749 59.7468C20.0405 59.7674 19.8043 59.7415 19.5798 59.6708C19.3554 59.6 19.1471 59.4857 18.9669 59.3344C18.7866 59.1832 18.6379 58.9979 18.5293 58.7892C18.4207 58.5804 18.3543 58.3523 18.3339 58.1179C18.3134 57.8835 18.3394 57.6474 18.4102 57.423C18.4811 57.1986 18.5954 56.9904 18.7468 56.8102L21.6295 53.374C21.7807 53.1937 21.966 53.045 22.1747 52.9363C22.3834 52.8277 22.6115 52.7612 22.8459 52.7406C23.0803 52.7201 23.3165 52.7459 23.5409 52.8167C23.7653 52.8874 23.9736 53.0016 24.1539 53.1529C24.3342 53.3041 24.4829 53.4893 24.5916 53.698C24.7002 53.9067 24.7667 54.1348 24.7873 54.3692C24.8078 54.6036 24.782 54.8397 24.7112 55.0641C24.6405 55.2885 24.5262 55.4968 24.375 55.6771L21.4913 59.1133ZM28.2957 58.967L26.5012 61.1053C26.35 61.2856 26.1647 61.4343 25.956 61.543C25.7473 61.6517 25.5192 61.7183 25.2848 61.7388C25.0504 61.7593 24.8142 61.7335 24.5898 61.6627C24.3653 61.5919 24.157 61.4777 23.9768 61.3264C23.6129 61.0211 23.3852 60.5837 23.3437 60.1106C23.3023 59.6374 23.4504 59.1671 23.7557 58.8032L25.5502 56.6638C25.8555 56.2998 26.2929 56.0719 26.7662 56.0304C27.2396 55.9888 27.71 56.137 28.0741 56.4422C28.4382 56.7475 28.6661 57.1849 28.7076 57.6582C28.7492 58.1315 28.601 58.6029 28.2957 58.967ZM32.2164 62.2568L31.7384 62.827C31.4331 63.1912 30.9956 63.4192 30.5222 63.4608C30.0488 63.5025 29.5782 63.3544 29.214 63.0491C28.8498 62.7438 28.6217 62.3064 28.5801 61.833C28.5384 61.3596 28.6865 60.8891 28.9918 60.5249L29.4719 59.9527C29.7775 59.5888 30.2151 59.3612 30.6886 59.3199C31.162 59.2786 31.6324 59.4271 31.9963 59.7326C32.3603 60.0382 32.5879 60.4758 32.6292 60.9492C32.6705 61.4225 32.522 61.8929 32.2164 62.2568ZM48.8687 54.7466C48.5045 55.0513 48.0344 55.1991 47.5613 55.1577C47.0883 55.1162 46.651 54.8889 46.3454 54.5255L41.1829 48.3747C41.1187 48.2957 41.0393 48.2303 40.9496 48.1823C40.8598 48.1343 40.7614 48.1046 40.6601 48.095C40.5588 48.0853 40.4565 48.096 40.3593 48.1262C40.2621 48.1564 40.1719 48.2057 40.0939 48.2711C40.016 48.3365 39.9518 48.4168 39.9051 48.5073C39.8584 48.5977 39.8302 48.6965 39.8221 48.798C39.814 48.8995 39.8261 49.0015 39.8578 49.0982C39.8895 49.195 39.9401 49.2844 40.0067 49.3614L46.2583 56.8102C46.4096 56.9905 46.5238 57.1988 46.5946 57.4232C46.6653 57.6476 46.6911 57.8837 46.6706 58.1181C46.6501 58.3525 46.5836 58.5806 46.4749 58.7893C46.3662 58.998 46.2175 59.1832 46.0372 59.3344C45.857 59.4857 45.6487 59.5999 45.4242 59.6706C45.1998 59.7414 44.9636 59.7672 44.7292 59.7467C44.4948 59.7261 44.2667 59.6596 44.058 59.551C43.8493 59.4423 43.6641 59.2936 43.5128 59.1133L37.2612 51.6645C37.1977 51.5833 37.1185 51.5157 37.0283 51.4657C36.9381 51.4157 36.8388 51.3844 36.7363 51.3737C36.6337 51.3629 36.5301 51.3729 36.4315 51.4031C36.3329 51.4332 36.2414 51.483 36.1624 51.5493C36.0835 51.6156 36.0187 51.6971 35.9719 51.789C35.9251 51.8808 35.8974 51.9812 35.8902 52.084C35.8831 52.1869 35.8968 52.2901 35.9304 52.3876C35.964 52.485 36.0169 52.5747 36.086 52.6513L41.2474 58.8063C41.3986 58.9865 41.5129 59.1947 41.5837 59.419C41.6544 59.6434 41.6803 59.8795 41.6598 60.1138C41.6393 60.3481 41.5729 60.5762 41.4643 60.7848C41.3557 60.9935 41.207 61.1787 41.0268 61.33C40.8466 61.4812 40.6384 61.5954 40.414 61.6662C40.1896 61.737 39.9535 61.7628 39.7192 61.7424C39.4848 61.7219 39.2568 61.6554 39.0481 61.5468C38.8394 61.4382 38.6541 61.2896 38.5029 61.1094L33.5677 55.2236C33.5035 55.1447 33.4241 55.0793 33.3344 55.0313C33.2446 54.9833 33.1462 54.9536 33.0449 54.944C32.9436 54.9343 32.8413 54.9449 32.7441 54.9752C32.6469 55.0054 32.5567 55.0547 32.4787 55.1201C32.4008 55.1855 32.3366 55.2658 32.2899 55.3562C32.2432 55.4467 32.215 55.5455 32.2069 55.647C32.1988 55.7484 32.2109 55.8505 32.2426 55.9472C32.2743 56.0439 32.3249 56.1334 32.3915 56.2104L36.0112 60.5239C36.2986 60.8647 36.4484 61.3005 36.4314 61.746C36.4144 62.1915 36.2318 62.6146 35.9193 62.9325C35.6068 63.2505 35.1869 63.4405 34.7418 63.4652C34.2966 63.49 33.8583 63.3478 33.5124 63.0665C33.9124 62.5325 34.1412 61.8898 34.1687 61.2232C34.1961 60.5566 34.021 59.8972 33.6664 59.3321C33.3118 58.7669 32.7942 58.3225 32.182 58.0572C31.5698 57.7919 30.8915 57.7183 30.2366 57.8461C30.2454 57.3554 30.1447 56.8688 29.9417 56.4219C29.7388 55.975 29.4388 55.5789 29.0635 55.2625C28.6867 54.9482 28.2446 54.7217 27.7694 54.5995C27.2941 54.4774 26.7976 54.4626 26.3159 54.5562C26.3245 54.0655 26.2236 53.579 26.0207 53.1322C25.8178 52.6853 25.5179 52.2892 25.1428 51.9726C24.7659 51.6584 24.3238 51.432 23.8486 51.3099C23.3733 51.1877 22.8769 51.1728 22.3952 51.2664C22.4035 50.7757 22.3026 50.2893 22.0997 49.8424C21.8968 49.3956 21.597 48.9994 21.222 48.6828C20.5461 48.1157 19.6725 47.8403 18.7935 47.9171C17.9145 47.9939 17.102 48.4166 16.5346 49.0922L16.4025 49.2509C15.8618 48.4663 15.4002 47.63 15.0246 46.7543C14.959 46.6016 14.8459 46.4742 14.7022 46.3909L10.934 44.2157L19.3804 29.5883L23.1476 31.7635C23.2985 31.8509 23.4748 31.8841 23.6472 31.8577L27.2864 31.3039C28.4742 31.1281 29.687 31.2422 30.8212 31.6366L23.5704 35.8262C23.192 36.0447 22.8603 36.3355 22.5942 36.6821C22.3282 37.0287 22.1331 37.4243 22.02 37.8464C21.9068 38.2684 21.878 38.7086 21.935 39.1417C21.992 39.5749 22.1337 39.9926 22.3522 40.371C22.5706 40.7494 22.8615 41.0811 23.2081 41.3471C23.5548 41.6131 23.9504 41.8083 24.3725 41.9214C24.7945 42.0345 25.2347 42.0634 25.668 42.0063C26.1012 41.9493 26.5189 41.8076 26.8974 41.5891L32.9115 38.1181C33.7582 39.3263 34.8901 40.3069 36.2068 40.9728C37.5234 41.6386 38.9841 41.9692 40.4592 41.9351L49.0858 52.2234C49.3909 52.5871 49.5395 53.0569 49.4988 53.5299C49.4581 54.0029 49.2315 54.4404 48.8687 54.7466ZM50.3019 46.396C50.1582 46.4793 50.0451 46.6068 49.9795 46.7594C49.6041 47.6349 49.1425 48.4709 48.6016 49.255L42.2752 41.712C43.1376 41.5136 43.9656 41.1879 44.732 40.7457C44.9085 40.6439 45.0373 40.4762 45.0901 40.2794C45.1429 40.0826 45.1154 39.8729 45.0135 39.6965C44.9117 39.52 44.744 39.3912 44.5472 39.3384C44.3504 39.2857 44.1407 39.3132 43.9643 39.415C42.2594 40.3957 40.2352 40.6604 38.3355 40.1512C36.4357 39.6419 34.8154 38.4002 33.8298 36.6983C33.7279 36.5222 33.5602 36.3938 33.3637 36.3412C33.1671 36.2886 32.9577 36.3162 32.7815 36.4179L26.1276 40.2564C25.9238 40.374 25.6988 40.4504 25.4655 40.481C25.2322 40.5117 24.9951 40.4962 24.7678 40.4352C24.3088 40.3122 23.9175 40.0118 23.6799 39.6003C23.4424 39.1887 23.378 38.6996 23.5011 38.2407C23.6241 37.7817 23.9245 37.3904 24.3361 37.1528L32.889 32.2149C34.3499 31.3748 36.0524 31.0544 37.7188 31.306L41.358 31.8597C41.5304 31.8865 41.7067 31.8532 41.8575 31.7656L45.6247 29.5904L54.0701 44.2178L50.3019 46.396ZM56.4236 45.2271L45.9328 27.0539L49.9252 24.7497L60.418 42.9229L56.4236 45.2271ZM63.4665 41.1603L61.7437 42.1552L51.2519 23.982L63.4686 16.9294L63.4665 41.1603Z"
+                  fill="#F76615"
+                />
+              </svg>
+            </div>
+            <p>
+              Наша компания добилась высоких результатов и понимаем, что для
+              достижения новых масштабных целей нам нужны сильные партнеры
+            </p>
+          </li>
+        </ul>
+        <h3 class="big">
+          Поэтому мы приглашаем вас стать частью компании «ИндиФуд»
+        </h3>
+      </div>
     </section>
 
-</body>
+    <section class="slider">
+      <div class="slider__img">
+        <svg
+          width="1920"
+          height="1135"
+          viewBox="0 0 1920 1135"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2018.52 1073.19C2018.52 1073.19 1102.4 1145.08 1098.22 822.539C1095.73 630.734 2055.81 537.428 1812.62 182.562C1538.26 -217.809 579.554 738.675 204.405 544.419C13.1092 445.363 -79.0001 -75.8373 -79.0001 -75.8373"
+            stroke="#FFDEC3"
+            stroke-width="127"
+          />
+        </svg>
+      </div>
+      <div class="container">
+        <h3 class="title">
+          Вот как будет выглядеть ваш будущий магазин
+          <span style="color: #f76615">Инди</span
+          ><span style="color: #01b620">Фуд</span>
+        </h3>
+      </div>
+      <div class="slider__wrapper">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/slider/1.jpg" alt="1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/slider/2.jpg" alt="2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/slider/3.jpg" alt="3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/slider/1.jpg" alt="1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/slider/2.jpg" alt="2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/slider/3.jpg" alt="3" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <svg
+            width="17"
+            height="31"
+            viewBox="0 0 17 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.71375 31.0078C1.39988 31.0078 1.09306 30.9148 0.832087 30.7404C0.571114 30.566 0.367708 30.3182 0.247595 30.0282C0.127481 29.7382 0.0960579 29.4191 0.157291 29.1113C0.218527 28.8035 0.369671 28.5207 0.591614 28.2988L13.3908 15.4999L0.591869 2.70094C0.29426 2.40333 0.127062 1.99969 0.127062 1.57881C0.127062 1.15792 0.29426 0.75428 0.591869 0.456669C0.889479 0.15906 1.29312 -0.00813866 1.71401 -0.00813866C2.13489 -0.00813866 2.53853 0.15906 2.83614 0.456669L16.2678 13.8883C16.6945 14.3161 16.9341 14.8956 16.9341 15.4998C16.9341 16.104 16.6945 16.6835 16.2678 17.1113L2.83614 30.5429C2.68892 30.6905 2.51397 30.8076 2.32135 30.8874C2.12873 30.9672 1.92224 31.0081 1.71375 31.0078Z"
+              fill="#F76615"
+            />
+          </svg>
+        </div>
+      </div>
 
+      <div class="container">
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="container">
+        <h3>Напишите нам</h3>
+        <p>
+          Если вы хотите стать частью компании «ИндиФуд» Оставьте заявку и мы
+          свяжемся в ближайшее время
+        </p>
+        <form action="" method="GET">
+          <ul class="form__list">
+            <li class="form__list_item">
+              <label>Имя<input type="text" name="name" placeholder="Ваше имя"/></label>
+            </li>
+            <li class="form__list_item">
+              <label>Телефон<input type="tel" name="phone" placeholder="+7 (999) 999-99-99"/></label>
+            </li>
+            <li class="form__list_item">
+              <label>E-mail<input type="email" name="email" placeholder="Электронная почта"/></label>
+            </li>
+            <li class="form__list_item">
+              <label>Город<input type="text" name="city" placeholder="Уфа" /></label>
+            </li>
+          </ul>
+
+          <label class="form__text">
+            Текст
+            <textarea name="text" placeholder="Задайте вопрос по франшизе*"></textarea>
+          </label>
+          <div class="form__btn">
+            <button type="submit">Отправить заявку</button>
+          </div>
+          <div class="form__lic">
+            Нажимая на кнопку, я соглашаюсь на <a href="#" target="_blank">обработку персональных данных</a> и с <a href="#" target="_blank">правилами пользования сайтом</a>
+          </div>
+        </form>
+      </div>
+      <div class="form__left">
+        <svg width="670" height="323" viewBox="0 0 670 323" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-6.10352e-05 317.457V0C-6.10352e-05 0 166.141 26.5515 233.247 100.276C300.353 174.001 347.044 166.854 481.647 196.017C555.183 211.949 600.576 231.722 628.308 250.663C676.963 283.895 671.259 314.568 667.813 317.457C662.402 321.992 590.966 323 590.966 323L-6.10352e-05 317.457Z" fill="#FFDEC3" />
+        </svg>
+      </div>
+      <div class="form__right"><img src="./img/hand.png" alt="hand"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        spaceBetween: 48,
+        navigation: {
+          nextEl: ".swiper-button-next",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          draggable: true,
+        },
+      });
+    </script>
+  </body>
 </html>

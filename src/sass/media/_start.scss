@@ -1,0 +1,49 @@
+@media(max-width:1440px) {
+    .start {
+        padding: 100px 0 140px;
+    }
+}
+
+@media(max-width:991px) {
+    .start {
+        padding: 100px 0;
+        &__list {
+            margin-top: 80px;
+            &_item {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    h3.title.mark {
+        padding: 15px;
+    }
+    .start {
+        padding: 60px 0;
+        &__list {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media(max-width:480px) {
+    .start {
+        &__list {
+            &_item {
+                grid-template-columns: 25px 1fr;
+                gap: 15px;
+                font-size: 18px;
+                &::before {
+                    width: 25px;
+                    height: 25px;
+                }
+                &::after {
+                    left: 11px;
+                    top: 15px;
+                }
+            }
+        }
+    }
+}

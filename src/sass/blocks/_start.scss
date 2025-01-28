@@ -3,15 +3,17 @@
 .start {
     padding: 171px 0 285px;
     background: url('../img/start_bg.png') left center/contain no-repeat;
+    background-size: auto 100%;
 
     &__list {
         margin-top: 116px;
         list-style-type: none;
         &_item {
             font-weight: 500;
-            display: flex;
+            display: grid;
             align-items: center;
-            margin-bottom: 50px;
+            padding-bottom: 50px;
+            grid-template-columns: 40px 1fr;
             gap: 36px;
             font-size: 32px;
             line-height: 95%;
@@ -30,7 +32,7 @@
                 content: '';
                 position: absolute;
                 width: 4px;
-                height: 65px;
+                height: 105%;
                 background: #01b620;
                 left: 18px;
                 top: 30px;

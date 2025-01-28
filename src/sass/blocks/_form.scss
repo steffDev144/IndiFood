@@ -1,0 +1,189 @@
+.form {
+    padding: 134px 0 200px;
+    position: relative;
+
+    h3 {
+        font-family: var(--font-family);
+        font-weight: 900;
+        font-size: 50px;
+        color: #f76615;
+    }
+
+    p {
+        margin-top: 19px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 30px;
+        color: #2f3035;
+    }
+
+    form {
+        padding: 71px 124px 81px 85px;
+        margin-top: 80px;
+        border-radius: 25px;
+        box-shadow: 0 3px 25px 0 rgba(58, 58, 58, 0.12);
+        background: #2f3035;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 340px);
+        list-style-type: none;
+        column-gap: 20px;
+        row-gap: 25px;
+
+        &_item {
+            label {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+    
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                color: #fff;
+    
+                input {
+                    border-radius: 15px;
+                    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+                    border: none;
+                    padding: 15px 30px;
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #767676;
+                    
+                }
+            }
+
+            &:last-child {
+                label input {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 33px;
+        textarea {
+            width: 100%!important;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+            padding: 18px 30px;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 18px;
+            height: 120px!important;
+            color: #767676;
+            resize: none;
+        }
+    }
+
+    &__btn {
+        padding-bottom: 19px;
+        button {
+            margin-top: 25px;
+            border: 1px solid #f76615;
+            border-radius: 7px;
+            width: 272px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 45px;
+            background-color: transparent;
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+
+            &::before {
+                content: '';
+                transition: all .4s ease-in-out;
+                position: absolute;
+                border-radius: 7px;
+                width: 100%;
+                height: 100%;
+                background: #2f3035;
+                z-index: -1;
+                top: 0;
+            }
+    
+            &::after {
+                content: '';
+                transition: all .3s ease-in-out;
+                position: absolute;
+                border-radius: 7px;
+                width: calc(100% + 3px);
+                left: 50%;
+                transform: translateX(-50%);
+                height: 116%;
+                background: #f76615;
+                z-index: -2;
+                bottom: -6px;
+            }
+    
+            &:hover {
+                &::before {
+                    height: 0;
+                    width: 80%;
+                } 
+            }
+        }
+
+        
+    }
+
+    &__lic {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        color: #fff;
+        max-width: 481px;
+
+        a {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+        }
+    }
+
+    &__left {
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 670px;
+        height: 323px;
+        svg {
+            width: inherit;
+            height: inherit;
+            object-fit: contain;
+        }
+    }
+
+    &__right {
+        width: 100%;
+        max-width: 349px;
+        height: auto;
+        right: 0;
+        bottom: 175px;
+        position: absolute;
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: contain;
+        }
+    }
+}

@@ -90,6 +90,7 @@ h3.title.mark {
 	}
 }
 
+@include meta.load-css("blocks/header");
 @include meta.load-css("blocks/main");
 @include meta.load-css("blocks/submain");
 @include meta.load-css("blocks/shop");
@@ -99,6 +100,7 @@ h3.title.mark {
 @include meta.load-css("blocks/why");
 @include meta.load-css("blocks/slider");
 @include meta.load-css("blocks/form");
+@include meta.load-css("blocks/footer");
 
 @include meta.load-css("media/main");
 @include meta.load-css("media/submain");

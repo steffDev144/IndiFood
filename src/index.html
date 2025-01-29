@@ -23,8 +23,8 @@
             поддержке и сервисам франчайзинга «ИндиФуд»
           </p>
           <div class="main__card_btns">
-            <a>Скачать презентацию</a>
-            <a class="link">Стать партнёром</a>
+            <a download="presentation.pdf" href="/files/presentation.pdf">Скачать презентацию</a>
+            <a class="link toForm">Стать партнёром</a>
           </div>
         </div>
         <div class="main__img"><img src="./img/main_bg.jpg" alt="" /></div>
@@ -132,56 +132,56 @@
               </div>
             </div>
           </li>
-          <li class="shop__list_item">
+          <li class="shop__list_item shop__list_item-hide">
             <div class="shop__list_item-img">
-              <img src="./img/shop/1.png" alt="1" />
+              <img src="./img/shop/4.png" alt="1" />
             </div>
             <div class="shop__list_item-wrap">
               <span class="shop__list_item-round"></span>
-              <div class="shop__list_item-title">Балашиха</div>
-              <div class="shop__list_item-subtitle">Советская ул., 10</div>
+              <div class="shop__list_item-title">Уфа</div>
+              <div class="shop__list_item-subtitle">Рихарда Зорге, 40/1</div>
               <div class="shop__list_item-price">
-                Выручка в месяц: <span>963 417 р.</span>
+                Выручка в месяц: <span>435 132 р.</span>
               </div>
               <div class="shop__list_item-price">
-                Прибыль в месяц: <span>291 365 р.</span>
+                Прибыль в месяц: <span>187 021 р.</span>
               </div>
             </div>
           </li>
-          <li class="shop__list_item">
+          <li class="shop__list_item shop__list_item-hide">
             <div class="shop__list_item-img">
-              <img src="./img/shop/2.png" alt="2" />
+              <img src="./img/shop/5.png" alt="2" />
             </div>
             <div class="shop__list_item-wrap">
               <span class="shop__list_item-round"></span>
-              <div class="shop__list_item-title">Ульяновск</div>
-              <div class="shop__list_item-subtitle">Гагарина, 27</div>
+              <div class="shop__list_item-title">Пермь</div>
+              <div class="shop__list_item-subtitle">Мира, 94</div>
               <div class="shop__list_item-price">
-                Выручка в месяц: <span>823 745 р.</span>
+                Выручка в месяц: <span>740 120 р.</span>
               </div>
               <div class="shop__list_item-price">
-                Прибыль в месяц: <span>370 964 р.</span>
+                Прибыль в месяц: <span>267 103 р.</span>
               </div>
             </div>
           </li>
-          <li class="shop__list_item">
+          <li class="shop__list_item shop__list_item-hide">
             <div class="shop__list_item-img">
-              <img src="./img/shop/3.png" alt="3" />
+              <img src="./img/shop/6.png" alt="3" />
             </div>
             <div class="shop__list_item-wrap">
               <span class="shop__list_item-round"></span>
-              <div class="shop__list_item-title">Екатеринбург</div>
-              <div class="shop__list_item-subtitle">Викулова 33/1</div>
+              <div class="shop__list_item-title">Челябинск</div>
+              <div class="shop__list_item-subtitle">Воровского, 60</div>
               <div class="shop__list_item-price">
-                Выручка в месяц: <span>1 153 452 р.</span>
+                Выручка в месяц: <span>811 437 р.</span>
               </div>
               <div class="shop__list_item-price">
-                Прибыль в месяц: <span>342 671 р.</span>
+                Прибыль в месяц: <span>251 100 р.</span>
               </div>
             </div>
           </li>
         </ul>
-        <a class="shop__more">Показать больше</a>
+        <a class="shop__more btn-elems" data-active="no">Показать больше</a>
       </div>
     </section>
 
@@ -260,7 +260,7 @@
           <li class="who__list_item">
             <div class="who__list_item-big">
               <div class="who__list_item-title">Итого:</div>
-              <div class="who__list_item-title">1 303 800 ₽</div>
+              <div class="who__list_item-title">1 003 800 ₽</div>
             </div>
             <div class="who__list_item-img">
               <svg
@@ -496,7 +496,7 @@
           Если вы хотите стать частью компании «ИндиФуд» Оставьте заявку и мы
           свяжемся в ближайшее время
         </p>
-        <form action="" method="GET">
+        <form id="formwrap" action="" method="GET">
           <ul class="form__list">
             <li class="form__list_item">
               <label>Имя<input type="text" name="name" placeholder="Ваше имя"/></label>
@@ -549,5 +549,52 @@
         },
       });
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+			const myHref = 'formwrap';
+			const lastForm = document.querySelector(`#${myHref}`);
+			const myLink = document.querySelector('.toForm');
+			const stylesForBehavior = `<style>html { scroll-behavior: smooth; }</style>`;
+			document.body.insertAdjacentHTML('beforeend', stylesForBehavior);
+			myLink.addEventListener('click', function (e) {
+				e.preventDefault();
+				const targetPosition = lastForm.getBoundingClientRect().top + window.scrollY;
+				const windowHeight = window.innerHeight;
+				const targetHeight = lastForm.offsetHeight;
+				const scrollToPosition = targetPosition - windowHeight + targetHeight + 150;
+				window.scrollTo({
+					top: scrollToPosition,
+					behavior: 'smooth'
+				});
+			});
+		});
+	</script>
+
+	<script>
+		const hideElems = document.querySelectorAll(".shop__list_item");
+		const btnElems = document.querySelector(".btn-elems");
+
+		btnElems.addEventListener("click", (e) => {
+			console.log(e.target.getAttribute("data-active"));
+			if(e.target.getAttribute("data-active") == "no") {
+				hideElems.forEach((elem) => {
+					if(elem.classList.contains("shop__list_item-hide")) {
+						elem.classList.remove("shop__list_item-hide");
+					}
+				});
+				e.target.setAttribute("data-active", "yes");
+				e.target.textContent = "Скрыть магазины";
+			} 
+			else if(e.target.getAttribute("data-active") == "yes") {
+				hideElems.forEach((elem, i) => {
+					if(i >= 3) {
+						elem.classList.add("shop__list_item-hide");
+					}
+				});
+				e.target.setAttribute("data-active", "no");
+				e.target.textContent = "Показать больше";
+			}
+		})
+	</script>
   </body>
 </html>

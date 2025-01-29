@@ -130,4 +130,10 @@ gulp.task('fonts', function () {
     .pipe(browsersync.stream());
 });
 
-gulp.task('default', gulp.parallel('watch', "build", "watch1", "html", 'styles', 'icons', 'images', 'fonts'));
+gulp.task('file', function () {
+  return gulp.src("src/files/*")
+    .pipe(gulp.dest("dist/files"))
+    .pipe(browsersync.stream());
+});
+
+gulp.task('default', gulp.parallel('watch', "build", "watch1", "html", 'styles', 'icons', 'images', 'fonts', "file"));

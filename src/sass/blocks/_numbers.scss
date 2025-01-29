@@ -33,7 +33,6 @@
             background: #242426;
             position: relative;
             padding: 32px 97px 32px 117px;
-
             &::before {
                 content: '';
                 border-radius: 30px 0 100px 0;
@@ -57,8 +56,10 @@
                 margin-bottom: 6px;
                 z-index: 2;
                 position: relative;
+                pointer-events: none;
             }
             &-subtitle {
+                pointer-events: none;
                 text-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
                 font-weight: 900;
                 font-size: 20px;

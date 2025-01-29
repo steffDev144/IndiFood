@@ -11,6 +11,10 @@
         list-style-type: none;
         margin-top: 50px;
         &_item {
+            transition: .15s all ease-in-out;
+            opacity: 1;
+            visibility: visible;
+            height: auto !important;
             &-img {
                 width: 100%;
                 height: auto;
@@ -91,4 +95,10 @@
             background-color: transparent;
         }
     }
+}
+
+.shop__list_item-hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0 !important;
 }

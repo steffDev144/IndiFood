@@ -90,6 +90,15 @@ h3.title.mark {
 	}
 }
 
+html {
+	padding-top: 82px;
+}
+@media(max-width:480px) {
+	html {
+		padding-top: 133px;
+	}
+}
+
 @include meta.load-css("blocks/header");
 @include meta.load-css("blocks/main");
 @include meta.load-css("blocks/submain");
@@ -102,9 +111,11 @@ h3.title.mark {
 @include meta.load-css("blocks/form");
 @include meta.load-css("blocks/footer");
 
+@include meta.load-css("media/header");
 @include meta.load-css("media/main");
 @include meta.load-css("media/submain");
 @include meta.load-css("media/shop");
 @include meta.load-css("media/numbers");
 @include meta.load-css("media/who");
 @include meta.load-css("media/start");
+@include meta.load-css("media/footer");

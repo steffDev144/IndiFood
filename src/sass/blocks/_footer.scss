@@ -6,7 +6,7 @@
         display: grid;
         grid-template-columns: 140px 1fr 145px;
         gap: 119px;
-        width: 1687px;
+        max-width: 1687px;
         padding: 0 20px;
         margin: 0 auto;
     }
@@ -55,7 +55,7 @@
         & > div {
             display: grid;
             grid-template-columns: repeat(2, max-content) 1fr;
-            width: 1687px;
+            max-width: 1687px;
             padding: 30px 20px;
             column-gap: 182px;
             row-gap: 15px;

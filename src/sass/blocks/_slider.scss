@@ -69,10 +69,15 @@
 
     &__img {
         position: absolute;
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
         left: 0;
         top: 0;
         z-index: -1;
+        svg {
+            width: inherit;
+            height: inherit;
+            object-fit: contain;
+        }
     }
 }

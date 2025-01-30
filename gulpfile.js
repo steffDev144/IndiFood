@@ -136,4 +136,10 @@ gulp.task('file', function () {
     .pipe(browsersync.stream());
 });
 
-gulp.task('default', gulp.parallel('watch', "build", "watch1", "html", 'styles', 'icons', 'images', 'fonts', "file"));
+gulp.task('mailer', function () {
+  return gulp.src("src/mailer/*")
+      .pipe(gulp.dest("dist/mailer"))
+      .pipe(browsersync.stream());
+});
+
+gulp.task('default', gulp.parallel('watch', "build", "watch1", "html", 'styles', 'icons', 'images', 'fonts', "file", "mailer"));

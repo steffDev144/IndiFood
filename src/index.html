@@ -538,25 +538,25 @@
           Если вы хотите стать частью компании «ИндиФуд» Оставьте заявку и мы
           свяжемся в ближайшее время
         </p>
-        <form id="formwrap" action="" method="GET">
+        <form id="formwrap" class="mainForm" action="" method="GET">
           <ul class="form__list">
             <li class="form__list_item">
-              <label>Имя<input type="text" name="name" placeholder="Ваше имя"/></label>
+              <label>Имя<input type="text" name="name" required class="typeName" placeholder="Ваше имя"/></label>
             </li>
             <li class="form__list_item">
-              <label>Телефон<input type="tel" name="phone" placeholder="+7 (999) 999-99-99"/></label>
+              <label>Телефон<input type="tel" name="phone" required id="userPhone" placeholder="+7 (999) 999-99-99"/></label>
             </li>
             <li class="form__list_item">
-              <label>E-mail<input type="email" name="email" placeholder="Электронная почта"/></label>
+              <label>E-mail<input type="email" name="email" required placeholder="Электронная почта"/></label>
             </li>
             <li class="form__list_item">
-              <label>Город<input type="text" name="city" placeholder="Уфа" /></label>
+              <label>Город<input type="text" name="city" required placeholder="Уфа" /></label>
             </li>
           </ul>
 
           <label class="form__text">
             Текст
-            <textarea name="text" placeholder="Задайте вопрос по франшизе*"></textarea>
+            <textarea name="text" class="typeName" placeholder="Задайте вопрос по франшизе*"></textarea>
           </label>
           <div class="form__btn">
             <button type="submit">Отправить заявку</button>
@@ -614,8 +614,22 @@
       </div>
     </footer>
 
+    <div class="modal-success modal hide" id="modal-success">
+      <div class="modal-success__block modal__block">
+          <div class="modal-success__block-close">&times;</div>
+          <!-- <div class="modal-success__block-title">
+              Благодарим за заявку! 
+              <br>
+              <span>Скоро с вами свяжется наш менеджер</span>
+          </div> -->
+          <!-- <div class="modal-success__block-title title">Благодарю за заявку!</div>
+          <div class="modal-success__block-descr title">Скоро с вами свяжется мой менеджер</div> -->
+      </div>
+  </div>
     
-    <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='js/jquery-migrate-1.2.1.min.js'></script>
+    <script type='text/javascript' src='js/jquery.maskedinput.min.js'></script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -634,52 +648,9 @@
         },
       });
     </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-			const myHref = 'formwrap';
-			const lastForm = document.querySelector(`#${myHref}`);
-			const myLink = document.querySelector('.toForm');
-			const stylesForBehavior = `<style>html { scroll-behavior: smooth; }</style>`;
-			document.body.insertAdjacentHTML('beforeend', stylesForBehavior);
-			myLink.addEventListener('click', function (e) {
-				e.preventDefault();
-				const targetPosition = lastForm.getBoundingClientRect().top + window.scrollY;
-				const windowHeight = window.innerHeight;
-				const targetHeight = lastForm.offsetHeight;
-				const scrollToPosition = targetPosition - windowHeight + targetHeight + 150;
-				window.scrollTo({
-					top: scrollToPosition,
-					behavior: 'smooth'
-				});
-			});
-		});
-	</script>
 
-	<script>
-		const hideElems = document.querySelectorAll(".shop__list_item");
-		const btnElems = document.querySelector(".btn-elems");
+    
+    <script src="./js/script.js"></script>
 
-		btnElems.addEventListener("click", (e) => {
-			console.log(e.target.getAttribute("data-active"));
-			if(e.target.getAttribute("data-active") == "no") {
-				hideElems.forEach((elem) => {
-					if(elem.classList.contains("shop__list_item-hide")) {
-						elem.classList.remove("shop__list_item-hide");
-					}
-				});
-				e.target.setAttribute("data-active", "yes");
-				e.target.textContent = "Скрыть магазины";
-			} 
-			else if(e.target.getAttribute("data-active") == "yes") {
-				hideElems.forEach((elem, i) => {
-					if(i >= 3) {
-						elem.classList.add("shop__list_item-hide");
-					}
-				});
-				e.target.setAttribute("data-active", "no");
-				e.target.textContent = "Показать больше";
-			}
-		})
-	</script>
   </body>
 </html>
